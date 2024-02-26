@@ -1,1 +1,0 @@
-# Devlopment by Kazuki

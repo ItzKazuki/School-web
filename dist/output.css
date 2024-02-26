@@ -750,6 +750,10 @@ html {
   background-color: rgb(109 55 5 / var(--tw-bg-opacity));
 }
 
+.bg-\[linear\] {
+  background-color: linear;
+}
+
 .bg-\[url\(\'\.\.\/assets\/DSC_9316\.JPG\'\)\] {
   background-image: url('../assets/DSC_9316.JPG');
 }
