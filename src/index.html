@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home | X- RPL 2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet" />
     <link rel="stylesheet" href="../dist/output.css" />
   </head>
   <body class="bg-brown-500">
@@ -15,23 +20,17 @@
           href="#home"
           class="flex items-center space-x-3 rtl:space-x-reverse">
           <img
-            src="../assets/Logo.png"
+            src="https://flowbite.com/docs/images/logo.svg"
             class="h-8"
             alt="Flowbite Logo" />
           <span class="self-center text-2xl font-semibold whitespace-nowrap"
-            >X RPL 2</span>
+            >EXENTWO</span
+          >
         </a>
-
-        <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
-          <span class="sr-only">Open main menu</span>
-          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
-          </svg>
-      </button>
         <div
           class="items-center justify-between w-full md:flex md:w-auto md:order-1">
           <ul
-            class="flex flex-col p-4 md:p-0 mt-4 font-semibold text-xl border rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
+            class="flex flex-col p-4 md:p-0 mt-4 font-semibold font-poppins text-xl border rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
             <li>
               <a
                 href="#"
@@ -78,127 +77,43 @@
       class="h-screen bg-[url('../assets/DSC_9316.JPG')] bg-center bg-cover bg-no-repeat bg-fixed flex justify-center items-center text-brown-400">
       <div class="text-center mt-[25rem]">
         <h1 id="home-content" class="font-bold text-4xl">All Story From Us</h1>
-        <p class="font-semibold text-xl py-4 px-40 mx-auto">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum deleniti mollitia quam optio quos minima.
+        <p class="font-semibold text-xl py-4 px-40 mx-auto font-poppins">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim numquam
+          veritatis doloribus qui laudantium facere eum quis officia
+          necessitatibus est?
         </p>
-        <button
-          onclick="goToUrl('#about-us')"
-          class="text-brown-500 bg-brown-800 rounded-xl px-4 py-3 w-15 inline-block">
-          <span class="font-bold text-lg">Learn More About Us</span>
-        </button>
-      </div>
-    </div>
-    <!-- <div id="home" class="relative">
-      <img src="../assets/DSC_9316.JPG" class="w-full" alt="" />
-      <h1 class="absolute text-5xl text-white top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"></h1>
-    </div> -->
-    <div id="about-us" class="text-center text-brown-800 px-20 my-10">
-      <div class="mb-5">
-        <h1 class="font-bold text-4xl mt-10 mb-2">About Us</h1>
-        <p class="px-10 text-justify">
-          Lorem ipsum dolor, sit amet consetetur adipisicing elit. Sapiente aut
-          accusantium exercitationem enim dolores aliquid alias dolorum
-          reprehenderit pariatur nihil. Odit dolores ab minus similique, at
-          eveniet com1modi repellendus, error eaque explicabo tenetur optio
-          consectetur ea autem nisi, neque ipsum doloribus quod obcaecati in
-          adipisci ut. Porro earum, accusantium molestias nam delectus ea labore
-          iusto, officiis magni eius quaerat debitis voluptatum reiciendis? Nam,
-          autem illo, atque hic voluptatibus excepturi fuga perferendis
-          dignissimos impedit blanditiis, iusto natus beatae ullam ipsam
-          ratione.
-        </p>
-      </div>
-      <!-- <div class="mb-5">
-        <h1 class="font-bold text-4xl mt-10 mb-2">Our Homeroom</h1>
-        <div class="flex items-center text-left justify-center">
-          <img src="../assets/DSC_0095.jpg" alt="NamaGuruHere!" width="200" />
-          <div class="pl-10">
-            <h1 class="font-bold text-2xl pl-11">About:</h1>
-            <p class="pl-14 font-semibold">Name:</p>
-            <p class="pl-14 font-semibold">Birthday:</p>
-            <p class="pl-14 font-semibold">Hobby:</p>
-            <p class="pl-14 font-semibold">Motto:</p>
-          </div>
-        </div>
-      </div> -->
-      <div>
-        <h1 class="font-bold text-4xl mb-10">Follow Us</h1>
-        <button
-          onclick="goToUrl('instagram.com/@someone')"
-          class="text-brown-500 bg-brown-800 rounded-xl px-3 py-3 w-15 inline-block">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="35px"
-            height="35px"
-            class="inline-block"
-            viewBox="0 0 1024 1024">
-            <path
-              fill="currentColor"
-              d="M512 378.7c-73.4 0-133.3 59.9-133.3 133.3S438.6 645.3 512 645.3S645.3 585.4 645.3 512S585.4 378.7 512 378.7M911.8 512c0-55.2.5-109.9-2.6-165c-3.1-64-17.7-120.8-64.5-167.6c-46.9-46.9-103.6-61.4-167.6-64.5c-55.2-3.1-109.9-2.6-165-2.6c-55.2 0-109.9-.5-165 2.6c-64 3.1-120.8 17.7-167.6 64.5C132.6 226.3 118.1 283 115 347c-3.1 55.2-2.6 109.9-2.6 165s-.5 109.9 2.6 165c3.1 64 17.7 120.8 64.5 167.6c46.9 46.9 103.6 61.4 167.6 64.5c55.2 3.1 109.9 2.6 165 2.6c55.2 0 109.9.5 165-2.6c64-3.1 120.8-17.7 167.6-64.5c46.9-46.9 61.4-103.6 64.5-167.6c3.2-55.1 2.6-109.8 2.6-165M512 717.1c-113.5 0-205.1-91.6-205.1-205.1S398.5 306.9 512 306.9S717.1 398.5 717.1 512S625.5 717.1 512 717.1m213.5-370.7c-26.5 0-47.9-21.4-47.9-47.9s21.4-47.9 47.9-47.9s47.9 21.4 47.9 47.9a47.84 47.84 0 0 1-47.9 47.9" />
-          </svg>
-          @someone
-        </button>
-      </div>
-    </div>
-    <div id="achivement" class="px-20 py-10 bg-brown-800">
-      <h1 class="font-bold text-4xl mb-10 text-brown-500 text-center">
-        Achivement
-      </h1>
-      <div class="flex items-center mb-6">
-        <img src="../assets/DSC_9316.JPG" alt="Foto Kegiatan" width="300px" />
-        <div class="text-brown-500 font-semibold text-xl ml-20">
-          <p>Nama Kegiatan:</p>
-          <p>Deskripsi Kegiatan:</p>
-        </div>
-      </div>
-      <div class="flex items-center mb-6">
-        <img src="../assets/DSC_9316.JPG" alt="Foto Kegiatan" width="300px" />
-        <div class="text-brown-500 font-semibold text-xl ml-20">
-          <p>Nama Kegiatan:</p>
-          <p>Deskripsi Kegiatan:</p>
-        </div>
-      </div>
-      <div class="flex items-center mb-6">
-        <img src="../assets/DSC_9316.JPG" alt="Foto Kegiatan" width="300px" />
-        <div class="text-brown-500 font-semibold text-xl ml-20">
-          <p>Nama Kegiatan:</p>
-          <p>Deskripsi Kegiatan:</p>
-        </div>
-      </div>
-    </div>
-    <div id="leader-and-coleader" class="px-20 my-10">
-      <h1 class="text-brown-800 font-bold text-4xl text-center">
-        Our Leader & Co-leader
-      </h1>
-      <div class="flex items-center mb-6">
-        <img src="../assets/DSC_0095.jpg" alt="Leader Photo" width="180" />
-        <div class="text-brown-800 font-semibold ml-20 text-lg">
-          <p>Nama:</p>
-          <p>Birthday:</p>
-          <p>Hobby:</p>
-          <p>Position: Leader</p>
-          <p>Motto:</p>
-        </div>
-      </div>
-      <div class="flex items-center mb-6">
-        <img src="../assets/DSC_0095.jpg" alt="Leader Photo" width="180" />
-        <div class="text-brown-800 font-semibold ml-20 text-lg">
-          <p>Nama:</p>
-          <p>Birthday:</p>
-          <p>Hobby:</p>
-          <p>Position: Co-Leader</p>
-          <p>Motto:</p>
-        </div>
-      </div>
-    </div>
-    <footer class="bg-brown-800 text-brown-500">
-      <div id="footer-content" class="flex py-5 px-20">
-        <div>
-          <h1 class="font-bold text-4xl">X RPL 2</h1>
-          <p class="font-semibold px-4 py-2 text-lg mb-10">"a motto here!"</p>
+        <a href="#about-us">
           <button
-            onclick="goToUrl('instagram.com/@someone', true)"
-            class="text-brown-800 bg-brown-500 rounded-xl px-3 py-2 w-15 inline-block">
+            class="text-brown-500 bg-brown-800 rounded-xl px-4 py-3 w-15 inline-block">
+            <span class="font-bold text-lg">Learn More About Us</span>
+          </button>
+        </a>
+      </div>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 250">
+      <path
+        fill="#6D3705"
+        fill-opacity="1"
+        d="M0,96L48,112C96,128,192,160,288,154.7C384,149,480,107,576,112C672,117,768,171,864,176C960,181,1056,139,1152,112C1248,85,1344,75,1392,69.3L1440,64L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path>
+    </svg>
+    <div id="about-us" class="text-center text-brown-800 px-20 py-10">
+      <h1 class="font-bold text-4xl mt-10 mb-5">About Us</h1>
+      <p class="px-10 text-lg text-justify font-poppins">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente aut
+        accusantium exercitationem enim dolores aliquid alias dolorum
+        reprehenderit pariatur nihil. Odit dolores ab minus similique, at
+        eveniet commodi repellendus, error eaque explicabo tenetur optio
+        consectetur ea autem nisi, neque ipsum doloribus quod obcaecati in
+        adipisci ut. Porro earum, accusantium molestias nam delectus ea labore
+        iusto, officiis magni eius quaerat debitis voluptatum reiciendis? Nam,
+        autem illo, atque hic voluptatibus excepturi fuga perferendis
+        dignissimos impedit blanditiis, iusto natus beatae ullam ipsam ratione.
+      </p>
+      <div class="mt-10">
+        <h1 class="font-bold text-4xl mb-10">Follow Us</h1>
+        <a href="https://instagram.com/@someone" target="_blank">
+          <button
+            class="text-brown-500 bg-brown-800 rounded-xl px-3 py-3 w-15 inline-block">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="35px"
@@ -211,34 +126,196 @@
             </svg>
             @someone
           </button>
+        </a>
+      </div>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 300">
+      <path
+        fill="#6D3705"
+        fill-opacity="1"
+        d="M0,160L48,181.3C96,203,192,245,288,245.3C384,245,480,203,576,176C672,149,768,139,864,165.3C960,192,1056,256,1152,256C1248,256,1344,192,1392,160L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+    </svg>
+    <div id="achivement" class="px-20 py-10 bg-brown-800">
+      <h1 class="font-bold text-4xl m-5 mb-6 text-brown-500 text-center">
+        Achivement
+      </h1>
+      <div class="grid-flow-row p-2 mb-6">
+        <button
+          type="button"
+          data-modal-target="default-modal"
+          data-modal-toggle="default-modal">
+          <img src="../assets/DSC_9316.JPG" alt="Foto Kegiatan" width="300" />
+        </button>
+        <button
+          type="button"
+          data-modal-target="default-modal"
+          data-modal-toggle="default-modal">
+          <img src="../assets/DSC_9316.JPG" alt="Foto Kegiatan" width="300" />
+        </button>
+        <button
+          type="button"
+          data-modal-target="default-modal"
+          data-modal-toggle="default-modal">
+          <img src="../assets/DSC_9316.JPG" alt="Foto Kegiatan" width="300" />
+        </button>
+        <button
+          type="button"
+          data-modal-target="default-modal"
+          data-modal-toggle="default-modal">
+          <img src="../assets/DSC_9316.JPG" alt="Foto Kegiatan" width="300" />
+        </button>
+        <button
+          type="button"
+          data-modal-target="default-modal"
+          data-modal-toggle="default-modal">
+          <img src="../assets/DSC_9316.JPG" alt="Foto Kegiatan" width="300" />
+        </button>
+        <button
+          type="button"
+          data-modal-target="default-modal"
+          data-modal-toggle="default-modal">
+          <img src="../assets/DSC_9316.JPG" alt="Foto Kegiatan" width="300" />
+        </button>
+        <button
+          type="button"
+          data-modal-target="default-modal"
+          data-modal-toggle="default-modal">
+          <img src="../assets/DSC_9316.JPG" alt="Foto Kegiatan" width="300" />
+        </button>
+      </div>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 250">
+      <path
+        fill="#6D3705"
+        fill-opacity="1"
+        d="M0,224L48,208C96,192,192,160,288,160C384,160,480,192,576,202.7C672,213,768,203,864,170.7C960,139,1056,85,1152,58.7C1248,32,1344,32,1392,32L1440,32L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path>
+    </svg>
+    <div id="leader-and-coleader" class="px-20 py-10">
+      <h1 class="text-brown-800 font-bold text-4xl text-center mt-10 mb-5">
+        Our Leader & Co-leader
+      </h1>
+      <div class="flex justify-center items-center mt-5">
+        <button>
+          <img src="../assets/DSC_0095.jpg" alt="Leader Photo" width="400" />
+        </button>
+        <button class="ml-8">
+          <img src="../assets/DSC_0095.jpg" alt="Leader Photo" width="400" />
+        </button>
+      </div>
+      <div class="flex justify-center mt-10">
+        <a href="members.html">
+          <button
+            class="text-brown-500 bg-brown-800 rounded-xl px-4 py-4 w-15 inline-block text-xl font-poppins">
+            All Members
+          </button>
+        </a>
+      </div>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 250">
+      <path
+        fill="#6D3705"
+        fill-opacity="1"
+        d="M0,96L48,112C96,128,192,160,288,181.3C384,203,480,213,576,208C672,203,768,181,864,186.7C960,192,1056,224,1152,229.3C1248,235,1344,213,1392,202.7L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+    </svg>
+    <footer class="bg-brown-800 text-brown-500">
+      <div id="footer-content" class="flex py-5 px-20">
+        <div>
+          <h1 class="font-bold text-4xl">X RPL 2</h1>
+          <p class="font-semibold px-4 py-2 text-lg mb-10 font-poppins">"a motto here!"</p>
+          <a href="https://instagram.com/@someone" target="_blank">
+            <button
+              class="text-brown-800 bg-brown-500 rounded-xl px-3 py-2 w-15 inline-block">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="35px"
+                height="35px"
+                class="inline-block"
+                viewBox="0 0 1024 1024">
+                <path
+                  fill="currentColor"
+                  d="M512 378.7c-73.4 0-133.3 59.9-133.3 133.3S438.6 645.3 512 645.3S645.3 585.4 645.3 512S585.4 378.7 512 378.7M911.8 512c0-55.2.5-109.9-2.6-165c-3.1-64-17.7-120.8-64.5-167.6c-46.9-46.9-103.6-61.4-167.6-64.5c-55.2-3.1-109.9-2.6-165-2.6c-55.2 0-109.9-.5-165 2.6c-64 3.1-120.8 17.7-167.6 64.5C132.6 226.3 118.1 283 115 347c-3.1 55.2-2.6 109.9-2.6 165s-.5 109.9 2.6 165c3.1 64 17.7 120.8 64.5 167.6c46.9 46.9 103.6 61.4 167.6 64.5c55.2 3.1 109.9 2.6 165 2.6c55.2 0 109.9.5 165-2.6c64-3.1 120.8-17.7 167.6-64.5c46.9-46.9 61.4-103.6 64.5-167.6c3.2-55.1 2.6-109.8 2.6-165M512 717.1c-113.5 0-205.1-91.6-205.1-205.1S398.5 306.9 512 306.9S717.1 398.5 717.1 512S625.5 717.1 512 717.1m213.5-370.7c-26.5 0-47.9-21.4-47.9-47.9s21.4-47.9 47.9-47.9s47.9 21.4 47.9 47.9a47.84 47.84 0 0 1-47.9 47.9" />
+              </svg>
+              @someone
+            </button>
+          </a>
         </div>
         <div class="px-32">
           <h1 class="font-bold text-4xl">Links</h1>
-          <div class="font-semibold px-4 py-2 text-lg">
+          <div class="font-semibold px-4 py-2 text-lg font-poppins">
             <ul>
               <li>
-                <a href="">Home</a>
+                <a href="#">Home</a>
               </li>
               <li>
-                <a href="">Achivement</a>
+                <a href="#achivement">Achivement</a>
               </li>
               <li>
-                <a href="">About Us</a>
+                <a href="#about-us">About Us</a>
               </li>
               <li>
-                <a href="">Instagram</a>
+                <a href="https://instagram.com/@someone">Instagram</a>
               </li>
               <li>
-                <a href="">Warsentwo</a>
+                <a href="marketplace.html">Warsentwo</a>
               </li>
             </ul>
           </div>
         </div>
       </div>
       <div class="text-center pb-3">
-        <p class="text-lg">Copyright - 2024. Build by Kazuki with love</p>
+        <p class="text-lg font-poppins">
+          Copyright - 2024. Build by Kazuki and team with ❤️
+        </p>
       </div>
     </footer>
+    <!-- Main modal -->
+    <div
+      id="default-modal"
+      tabindex="-1"
+      aria-hidden="true"
+      class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+      <div class="relative p-4">
+        <!-- Modal content -->
+        <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+          <button
+            type="button"
+            class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
+            data-modal-hide="default-modal">
+            <svg
+              class="w-3 h-3"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 14 14">
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+            </svg>
+            <span class="sr-only">Close modal</span>
+          </button>
+          <!-- Modal body -->
+          <div class="p-4 md:p-5 space-y-4">
+            <p
+              class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+              With less than a month to go before the European Union enacts new
+              consumer privacy laws for its citizens, companies around the world
+              are updating their terms of service agreements to comply.
+            </p>
+            <p
+              class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+              The European Union’s General Data Protection Regulation (G.D.P.R.)
+              goes into effect on May 25 and is meant to ensure a common set of
+              data rights in the European Union. It requires organizations to
+              notify users as soon as possible of high-risk data breaches that
+              could personally affect them.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
-  <script src="js/index.js"></script>
+  <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
 </html>
