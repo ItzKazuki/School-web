@@ -620,32 +620,8 @@ html {
   margin-top: 1rem;
 }
 
-.mt-40 {
-  margin-top: 10rem;
-}
-
-.mt-\[\] {
-  margin-top: ;
-}
-
 .mt-\[25rem\] {
   margin-top: 25rem;
-}
-
-.mt-20 {
-  margin-top: 5rem;
-}
-
-.mt-80 {
-  margin-top: 20rem;
-}
-
-.mt-9 {
-  margin-top: 2.25rem;
-}
-
-.mt-8 {
-  margin-top: 2rem;
 }
 
 .block {
@@ -843,14 +819,6 @@ html {
 
 .pl-14 {
   padding-left: 3.5rem;
-}
-
-.pt-40 {
-  padding-top: 10rem;
-}
-
-.pt-20 {
-  padding-top: 5rem;
 }
 
 .text-left {
