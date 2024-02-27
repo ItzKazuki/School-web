@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-# Devlopment by 0rcaaa
-=======
-
 # EXENTWO
 ## Pembukaan
 Project ini adalah project terbuka (bagi kelas x rpl 2) dimana berisi mengenai prestasi, latarbelakang, dan info mengenai anggota angggota kelas X RPL 2. Project ini dibuat sukarela dan semua orang dapat memberikan saran/kritik dari web ini. web ini diperkirakan launching di saat kelas kita mengadakan acara pentas, sekalian menampilkan bahwa kami adalah kelas yang berprestasi dan juga unggul.
@@ -19,4 +15,3 @@ Project ini adalah project terbuka (bagi kelas x rpl 2) dimana berisi mengenai p
 dokumentasi saat kita membuat website ini. mulai dari awal hingga akhir.
 ### awal pembuatan (25-28 februari 2024)
 MISSING IMAGE!
->>>>>>> bd95f03 (ADD & FIX: menambahkan readme dan menambah folder dist/* ke .gitignore)
