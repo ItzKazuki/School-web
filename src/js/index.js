@@ -1,10 +1,23 @@
-function goToUrl(url, newTab = false) {
-  if (!newTab) {
-    window.location.href = "https://" + url;
-    return;
+(function() {
+  "use strict";
+    /**
+   * Easy selector helper function
+   */
+    const select = (el, all = false) => {
+      el = el.trim()
+      if (all) {
+        return [...document.querySelectorAll(el)]
+      } else {
+        return document.querySelector(el)
+      }
+    }
+  /**
+   * Preloader
+   */
+  let preloader = select('#preloader');
+  if (preloader) {
+    window.addEventListener('load', () => {
+      preloader.remove()
+    });
   }
-
-  window.open("https://" + url, "_blank");
-}
-
-// TODO: make data.json and fetch all content from data.json
+})();
