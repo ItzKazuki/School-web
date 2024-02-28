@@ -2,3 +2,4 @@ node_modules/*
 watch
 dist/*
 dist/output.css
+package-lock.json
