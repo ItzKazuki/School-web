@@ -1,4 +1,14 @@
 {
+  "name": "EXENTWO",
+  "version": "1.1.0",
+  "author": {
+    "name": "ItzKazuki",
+    "email": "contact@kazukikun.space"
+  },
+  "scripts": {
+    "dev": "tailwindcss -i ./src/css/input.css -o ./dist/output.css --watch",
+    "build": "tailwindcss build ./src/css/input.css -o ./dist/build.css"
+  },
   "devDependencies": {
     "tailwindcss": "^3.4.1"
   },
