@@ -11,6 +11,11 @@ Project ini adalah project terbuka (bagi kelas x rpl 2) dimana berisi mengenai p
 - Ashila
 - Yuki
 - Indah
+## Version
+#### versi saat ini: v1.0.0
+versi ini merupakan versi awal dari project nya, dimana overall sudah 10-20% kemajuan tampilan web nya.
+### NOTES
+untuk penggunaan version harus menggunakan format internasional dimana sesuai dengan MAYOR.MINOR.PATCH bisa dilihat di [link berikut ini](https://semver.org)
 ## Dokumentasi
 dokumentasi saat kita membuat website ini. mulai dari awal hingga akhir.
 ### awal pembuatan (25-28 februari 2024)
