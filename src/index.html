@@ -9,9 +9,7 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet" />
-    <link
-      rel="stylesheet"
-      href="vendor/fontawsome-icon/css/all.min.css" />
+    <link rel="stylesheet" href="vendor/fontawsome-icon/css/all.min.css" />
     <link rel="stylesheet" href="../dist/output.css" />
   </head>
   <body class="bg-brown-500">
@@ -93,8 +91,8 @@
     <!-- using js for change the backgroud! -->
     <div
       id="home"
-      class="h-screen bg-[url('../assets/DSC_9316.JPG')] bg-center bg-cover bg-no-repeat bg-fixed flex justify-center items-center text-brown-700">
-      <div class="text-center mt-[25rem]">
+      class="h-screen bg-[url('../assets/DSC_9316.JPG')] bg-center bg-cover bg-no-repeat bg-fixed flex justify-center items-center text-brown-400">
+      <div class="text-center mt-[20rem]">
         <h1 id="home-content" class="font-bold text-4xl">All Story From Us</h1>
         <p class="font-semibold text-xl py-4 px-40 mx-auto font-poppins">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim numquam
@@ -108,6 +106,7 @@
           </button>
         </a>
       </div>
+      <span id="null"></span>
     </div>
     <div id="news" class="bg-brown-800 text-center px-20 py-10">
       <h1 class="font-bold text-4xl mt-10 mb-5 text-brown-500">News</h1>
@@ -252,16 +251,7 @@
         <a href="https://instagram.com/@someone" target="_blank">
           <button
             class="text-brown-500 bg-brown-800 rounded-xl px-3 py-3 w-15 inline-block">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="35px"
-              height="35px"
-              class="inline-block"
-              viewBox="0 0 1024 1024">
-              <path
-                fill="currentColor"
-                d="M512 378.7c-73.4 0-133.3 59.9-133.3 133.3S438.6 645.3 512 645.3S645.3 585.4 645.3 512S585.4 378.7 512 378.7M911.8 512c0-55.2.5-109.9-2.6-165c-3.1-64-17.7-120.8-64.5-167.6c-46.9-46.9-103.6-61.4-167.6-64.5c-55.2-3.1-109.9-2.6-165-2.6c-55.2 0-109.9-.5-165 2.6c-64 3.1-120.8 17.7-167.6 64.5C132.6 226.3 118.1 283 115 347c-3.1 55.2-2.6 109.9-2.6 165s-.5 109.9 2.6 165c3.1 64 17.7 120.8 64.5 167.6c46.9 46.9 103.6 61.4 167.6 64.5c55.2 3.1 109.9 2.6 165 2.6c55.2 0 109.9.5 165-2.6c64-3.1 120.8-17.7 167.6-64.5c46.9-46.9 61.4-103.6 64.5-167.6c3.2-55.1 2.6-109.8 2.6-165M512 717.1c-113.5 0-205.1-91.6-205.1-205.1S398.5 306.9 512 306.9S717.1 398.5 717.1 512S625.5 717.1 512 717.1m213.5-370.7c-26.5 0-47.9-21.4-47.9-47.9s21.4-47.9 47.9-47.9s47.9 21.4 47.9 47.9a47.84 47.84 0 0 1-47.9 47.9" />
-            </svg>
+            <i class="fa-brands fa-instagram fa-2xl"></i>
             @someone
           </button>
         </a>
@@ -364,17 +354,8 @@
           </p>
           <a href="https://instagram.com/@someone" target="_blank">
             <button
-              class="text-brown-800 bg-brown-500 rounded-xl px-3 py-2 w-15 inline-block">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="35px"
-                height="35px"
-                class="inline-block"
-                viewBox="0 0 1024 1024">
-                <path
-                  fill="currentColor"
-                  d="M512 378.7c-73.4 0-133.3 59.9-133.3 133.3S438.6 645.3 512 645.3S645.3 585.4 645.3 512S585.4 378.7 512 378.7M911.8 512c0-55.2.5-109.9-2.6-165c-3.1-64-17.7-120.8-64.5-167.6c-46.9-46.9-103.6-61.4-167.6-64.5c-55.2-3.1-109.9-2.6-165-2.6c-55.2 0-109.9-.5-165 2.6c-64 3.1-120.8 17.7-167.6 64.5C132.6 226.3 118.1 283 115 347c-3.1 55.2-2.6 109.9-2.6 165s-.5 109.9 2.6 165c3.1 64 17.7 120.8 64.5 167.6c46.9 46.9 103.6 61.4 167.6 64.5c55.2 3.1 109.9 2.6 165 2.6c55.2 0 109.9.5 165-2.6c64-3.1 120.8-17.7 167.6-64.5c46.9-46.9 61.4-103.6 64.5-167.6c3.2-55.1 2.6-109.8 2.6-165M512 717.1c-113.5 0-205.1-91.6-205.1-205.1S398.5 306.9 512 306.9S717.1 398.5 717.1 512S625.5 717.1 512 717.1m213.5-370.7c-26.5 0-47.9-21.4-47.9-47.9s21.4-47.9 47.9-47.9s47.9 21.4 47.9 47.9a47.84 47.84 0 0 1-47.9 47.9" />
-              </svg>
+              class="text-brown-800 bg-brown-500 rounded-xl px-4 py-3 w-15 inline-block">
+              <i class="fa-brands fa-instagram fa-2xl"></i>
               @someone
             </button>
           </a>
