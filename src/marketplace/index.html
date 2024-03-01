@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--=============== REMIXICONS ===============-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" crossorigin="">
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&family=Poppins:ital,wght@0,300;0,400;0,700;1,100;1,300;1,400;1,700&family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+    <!-- Feather -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Eden-Shop</title>
+    <!-- Logo -->
+    <link rel="icon" type="image/icon" href="asset/Logo.png">
+</head>
+<body>
+    <!-- Nav -->
+    <nav class="navbar">
+        <img src="asset/Logo.png" alt="" class="logo">
+        <a href="" class="navbar-logo"><span>Eden</span>Shop.</a>
+
+        <div class="navbar-nav">
+            <a href="#">Home</a>
+            <a href="#about">Whats New?</a>
+            <a href="#af">Action Figure</a>
+            <a href="#manga">Manga</a>
+        </div>
+
+        <div class="navbar-extra">
+            <a href="#"id="search-button"><img src="asset/search.svg" alt=""></a>
+            <a href="#"id="shopping-cart"><img src="asset/shopping-cart.svg" alt=""></a>
+            <a href="#"id="hambuger-menu"><img src="asset/menu.svg" alt=""></a>
+            <a href="#" id="user"><img src="asset/user.svg" alt="" ></a>
+        </div>
+
+
+        <div class="search-form">
+         <input type="search" id="search-box" placeholder="Search">
+         <label for="search-box"><img src="asset/search.svg" alt=""></i></label>
+      </div>
+      
+    <div class="shopping-cart">
+      <div class="cart-item">
+        <img src="asset/manga9.jpg" alt="">
+        <div class="item-detail">
+          <h4>Skip to Loafer</h4>
+          <div class="item-price"><p>IDR 99.900</div>
+        </div>
+        <img src="asset/trash.svg" alt="" class="del-item">
+      </div>
+    </div>
+
+<!-- LOGIN -->
+    <div class="user-login hide" id="user-login">
+      <span><img src="asset/x.svg" alt="" id="exit" ></span>
+      <div class="login">
+        <h1 style="text-align: center; padding:4rem 0rem;">Login</h1>
+        <form action="" style="align-items: center;">
+          <label for="email">Email/Username</label><br>
+          <input type="text" id="email" name="email"><br>
+          <label for="email">Password</label><br>
+          <input type="password" id="Password" name="Password" ><br>
+          <input type="button" value="Login" id="login-btn">
+        </form>
+        <a href="">Forgot Password</a>
+        <a href="">Create Account</a>
+      </div>
+    </div>
+    <!-- LOGIN -->
+
+    </nav>
+    <!-- nav end-->
+
+
+<!-- hero -->
+<section class="hero" id="home">
+    <main class="content">
+        <h1><Span>Eden</Span>-Shop</h1>
+        <p>A Paradise Only for YOU!</p>
+        <a href="#af" class="cta"><span>Buy Now</span></a>
+    </main>
+</section>
+<!-- hero end -->
+
+
+
+<!-- about -->
+<section class="about" id="about">
+    <h2>New</h2>    
+    <div class="slider">
+      <div class="list">
+          <div class="item">
+              <img src="asset/cs1.jpg" alt="">
+          </div>
+          <div class="item">
+              <img src="asset/cs2.jpg" alt="">
+          </div>
+          <div class="item">
+              <img src="asset/cs3.jpg" alt="">
+          </div>
+          <div class="item">
+              <img src="asset/cs4.jpg" alt="">
+          </div>
+          <div class="item">
+              <img src="asset/cs5.jpg" alt="">
+          </div>
+      </div>
+      <div class="buttons">
+          <button id="prev"><</button>
+          <button id="next">></button>
+      </div>
+      <ul class="dots">
+          <li class="active"></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+      </ul>
+  </div>
+</section>
+<!-- about end -->
+
+
+
+
+<!-- shop -->
+<section class="shop" id="af">
+    <h2>Shop</h2>
+    <!-- Scale Figure -->
+    <div class="container swiper">
+      <h1 style="font-weight: bold; font-size:3rem; padding-left:2.5rem;">
+         Scaled Figure
+      </h1>
+      <div class="slide-container">
+        <div class="card-wrapper swiper-wrapper">
+          <div class="kartu swiper-slide">
+            <div class="image-box">
+              <img src="asset/Nian.jpg" alt="" />
+            </div>
+            <div class="profile-details">
+              <div class="name-job">
+                <a href="#" class="name">Figure 1/7 Surtr: Liberté//Échec VER.</a href="#">
+                <h4 class="job">IDR 999.999,00</h4>
+              </div>
+            </div>
+         </div>
+          <div class="kartu swiper-slide">
+            <div class="image-box">
+              <img src="asset/Nian.jpg" alt="" />
+            </div>
+            <div class="profile-details">
+              <div class="name-job">
+                <a href="#" class="name">Figure 1/7 Surtr: Liberté//Échec VER.</a href="#">
+                <h4 class="job">IDR 999.999,00</h4>
+              </div>
+            </div>
+         </div>
+          <div class="kartu swiper-slide">
+            <div class="image-box">
+              <img src="asset/Nian.jpg" alt="" />
+            </div>
+            <div class="profile-details">
+              <div class="name-job">
+                <a href="#" class="name">Figure 1/7 Surtr: Liberté//Échec VER.</a href="#">
+                <h4 class="job">IDR 999.999,00</h4>
+              </div>
+            </div>
+         </div>
+          <div class="kartu swiper-slide">
+            <div class="image-box">
+              <img src="asset/Nian.jpg" alt="" />
+            </div>
+            <div class="profile-details">
+              <div class="name-job">
+                <a href="#" class="name">Figure 1/7 Surtr: Liberté//Échec VER.</a href="#">
+                <h4 class="job">IDR 999.999,00</h4>
+              </div>
+            </div>
+         </div>
+          <div class="kartu swiper-slide">
+            <div class="image-box">
+              <img src="asset/Nian.jpg" alt="" />
+            </div>
+            <div class="profile-details">
+              <div class="name-job">
+                <a href="#" class="name">Figure 1/7 Surtr: Liberté//Échec VER.</a href="#">
+                <h4 class="job">IDR 999.999,00</h4>
+              </div>
+            </div>
+         </div>
+          <div class="kartu swiper-slide">
+            <div class="image-box">
+              <img src="asset/Nian.jpg" alt="" />
+            </div>
+            <div class="profile-details">
+              <div class="name-job">
+                <a href="#" class="name">Figure 1/7 Surtr: Liberté//Échec VER.</a href="#">
+                <h4 class="job">IDR 999.999,00</h4>
+              </div>
+            </div>
+         </div>
+        </div>
+      </div>
+      <div class="swiper-button-next swiper-navBtn"></div>
+      <div class="swiper-button-prev swiper-navBtn"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+    <!-- Nendroid -->
+    <div class="container swiper">
+      <h1 style="font-weight: bold; font-size:3rem; padding-left:2.5rem;">
+         Nendoroid
+      </h1>
+      <div class="slide-container">
+        <div class="card-wrapper swiper-wrapper">
+          <div class="kartu swiper-slide">
+            <div class="image-box">
+              <img src="asset/miku.jpg" alt="" />
+            </div>
+            <div class="profile-details">
+              <div class="name-job">
+                <a href="#" class="name">Nendroid Unyu Miku</a href="#">
+                <h4 class="job">IDR 999.999,00</h4>
+              </div>
+            </div>
+         </div>
+          <div class="kartu swiper-slide">
+            <div class="image-box">
+              <img src="asset/miku.jpg" alt="" />
+            </div>
+            <div class="profile-details">
+              <div class="name-job">
+                <a href="#" class="name">Nendroid Unyu Miku</a href="#">
+                <h4 class="job">IDR 999.999,00</h4>
+              </div>
+            </div>
+         </div>
+          <div class="kartu swiper-slide">
+            <div class="image-box">
+              <img src="asset/miku.jpg" alt="" />
+            </div>
+            <div class="profile-details">
+              <div class="name-job">
+                <a href="#" class="name">Nendroid Unyu Miku</a href="#">
+                <h4 class="job">IDR 999.999,00</h4>
+              </div>
+            </div>
+         </div>
+          <div class="kartu swiper-slide">
+            <div class="image-box">
+              <img src="asset/miku.jpg" alt="" />
+            </div>
+            <div class="profile-details">
+              <div class="name-job">
+                <a href="#" class="name">Nendroid Unyu Miku</a href="#">
+                <h4 class="job">IDR 999.999,00</h4>
+              </div>
+            </div>
+         </div>
+          <div class="kartu swiper-slide">
+            <div class="image-box">
+              <img src="asset/miku.jpg" alt="" />
+            </div>
+            <div class="profile-details">
+              <div class="name-job">
+                <a href="#" class="name">Nendroid Unyu Miku</a href="#">
+                <h4 class="job">IDR 999.999,00</h4>
+              </div>
+            </div>
+         </div>
+          <div class="kartu swiper-slide">
+            <div class="image-box">
+              <img src="asset/miku.jpg" alt="" />
+            </div>
+            <div class="profile-details">
+              <div class="name-job">
+                <a href="#" class="name">Nendroid Unyu Miku</a href="#">
+                <h4 class="job">IDR 999.999,00</h4>
+              </div>
+            </div>
+         </div>
+        </div>
+      </div>
+      <div class="swiper-button-next swiper-navBtn"></div>
+      <div class="swiper-button-prev swiper-navBtn"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+    <!-- Modelkit -->
+    <div class="container swiper">
+       <h1 style="font-weight: bold; font-size:3rem; padding-left:2.5rem;">
+          Model Kit
+         </h1>
+         <div class="slide-container">
+        <div class="card-wrapper swiper-wrapper">
+          <div class="kartu swiper-slide">
+            <div class="image-box">
+               <img src="asset/gundam.jpg" alt="" />
+            </div>
+            <div class="profile-details">
+               <div class="name-job">
+                <a href="#" class="name">MG1/100 "Freedom Gundam Tengan Kujaku"</a href="#">
+                  <h4 class="job">IDR 999.999,00</h4>
+              </div>
+            </div>
+         </div>
+         <div class="kartu swiper-slide">
+            <div class="image-box">
+               <img src="asset/gundam.jpg" alt="" />
+            </div>
+            <div class="profile-details">
+               <div class="name-job">
+                <a href="#" class="name">MG1/100 "Freedom Gundam Tengan Kujaku"</a href="#">
+                <h4 class="job">IDR 999.999,00</h4>
+              </div>
+            </div>
+         </div>
+         <div class="kartu swiper-slide">
+            <div class="image-box">
+               <img src="asset/gundam.jpg" alt="" />
+            </div>
+            <div class="profile-details">
+               <div class="name-job">
+                <a href="#" class="name">MG1/100 "Freedom Gundam Tengan Kujaku"</a href="#">
+                  <h4 class="job">IDR 999.999,00</h4>
+              </div>
+            </div>
+         </div>
+         <div class="kartu swiper-slide">
+            <div class="image-box">
+               <img src="asset/gundam.jpg" alt="" />
+            </div>
+            <div class="profile-details">
+               <div class="name-job">
+                <a href="#" class="name">MG1/100 "Freedom Gundam Tengan Kujaku"</a href="#">
+                <h4 class="job">IDR 999.999,00</h4>
+              </div>
+            </div>
+         </div>
+          <div class="kartu swiper-slide">
+             <div class="image-box">
+              <img src="asset/gundam.jpg" alt="" />
+            </div>
+            <div class="profile-details">
+               <div class="name-job">
+                <a href="#" class="name">MG1/100 "Freedom Gundam Tengan Kujaku"</a href="#">
+                  <h4 class="job">IDR 999.999,00</h4>
+              </div>
+            </div>
+         </div>
+         <div class="kartu swiper-slide">
+            <div class="image-box">
+               <img src="asset/gundam.jpg" alt="" />
+            </div>
+            <div class="profile-details">
+               <div class="name-job">
+                <a href="#" class="name">MG1/100 "Freedom Gundam Tengan Kujaku"</a href="#">
+                  <h4 class="job">IDR 999.999,00</h4>
+              </div>
+            </div>
+         </div>
+         <div class="kartu swiper-slide">
+            <div class="image-box">
+               <img src="asset/gundam.jpg" alt="" />
+            </div>
+            <div class="profile-details">
+               <div class="name-job">
+                <a href="#" class="name">MG1/100 "Freedom Gundam Tengan Kujaku"</a href="#">
+                  <h4 class="job">IDR 999.999,00</h4>
+              </div>
+            </div>
+         </div>
+      </div>
+      </div>
+      <div class="swiper-button-next swiper-navBtn"></div>
+      <div class="swiper-button-prev swiper-navBtn"></div>
+      <div class="swiper-pagination"></div>
+   </div>
+   <!-- Merchand -->
+   <div class="container swiper">
+     <h1 style="font-weight: bold; font-size:3rem; padding-left:2.5rem;">
+       Merchand
+     </h1>
+     <div class="slide-container">
+       <div class="card-wrapper swiper-wrapper">
+         <div class="kartu swiper-slide">
+           <div class="image-box">
+             <img src="asset/staf.jpg" alt="" />
+           </div>
+           <div class="profile-details">
+             <div class="name-job">
+               <a href="#" class="name">Puella Magi Madoka Magica the Movie: Earphone Jack Accessories</a href="#">
+               <h4 class="job">IDR 999.999,00</h4>
+             </div>
+           </div>
+        </div>
+         <div class="kartu swiper-slide">
+           <div class="image-box">
+             <img src="asset/staf.jpg" alt="" />
+           </div>
+           <div class="profile-details">
+             <div class="name-job">
+               <a href="#" class="name">Puella Magi Madoka Magica the Movie: Earphone Jack Accessories</a href="#">
+               <h4 class="job">IDR 999.999,00</h4>
+             </div>
+           </div>
+        </div>
+         <div class="kartu swiper-slide">
+           <div class="image-box">
+             <img src="asset/staf.jpg" alt="" />
+           </div>
+           <div class="profile-details">
+             <div class="name-job">
+               <a href="#" class="name">Puella Magi Madoka Magica the Movie: Earphone Jack Accessories</a href="#">
+               <h4 class="job">IDR 999.999,00</h4>
+             </div>
+           </div>
+        </div>
+         <div class="kartu swiper-slide">
+           <div class="image-box">
+             <img src="asset/staf.jpg" alt="" />
+           </div>
+           <div class="profile-details">
+             <div class="name-job">
+               <a href="#" class="name">Puella Magi Madoka Magica the Movie: Earphone Jack Accessories</a href="#">
+               <h4 class="job">IDR 999.999,00</h4>
+             </div>
+           </div>
+        </div>
+         <div class="kartu swiper-slide">
+           <div class="image-box">
+             <img src="asset/staf.jpg" alt="" />
+           </div>
+           <div class="profile-details">
+             <div class="name-job">
+               <a href="#" class="name">Puella Magi Madoka Magica the Movie: Earphone Jack Accessories</a href="#">
+               <h4 class="job">IDR 999.999,00</h4>
+             </div>
+           </div>
+        </div>
+         <div class="kartu swiper-slide">
+           <div class="image-box">
+             <img src="asset/staf.jpg" alt="" />
+           </div>
+           <div class="profile-details">
+             <div class="name-job">
+               <a href="#" class="name">Puella Magi Madoka Magica the Movie: Earphone Jack Accessories</a href="#">
+               <h4 class="job">IDR 999.999,00</h4>
+             </div>
+           </div>
+        </div>
+         <div class="kartu swiper-slide">
+           <div class="image-box">
+             <img src="asset/staf.jpg" alt="" />
+           </div>
+           <div class="profile-details">
+             <div class="name-job">
+               <a href="#" class="name">Puella Magi Madoka Magica the Movie: Earphone Jack Accessories</a href="#">
+               <h4 class="job">IDR 999.999,00</h4>
+             </div>
+           </div>
+        </div>
+       </div>
+     </div>
+     <div class="swiper-button-next swiper-navBtn"></div>
+     <div class="swiper-button-prev swiper-navBtn"></div>
+     <div class="swiper-pagination"></div>
+   </div>
+    
+</section>
+<!-- Shop -->
+
+
+
+
+<!--manga -->
+
+<section class="manga" id="manga">
+   <h2>Manga</h2>
+   
+   <div class="row">
+      <div class="card">
+         <div class="gambar">
+            <img src="asset/manga1.jpg" alt="">
+         </div>
+         <div class="judul">
+            <a href="#">Jujutsu Kaisen</a>
+         </div>
+         <div class="harga">IDK 99.900
+         </div>
+         <div>
+            <a href="#" class="cta"><span>Buy Now</span></a>
+         </div>
+      </div>
+      <div class="card">
+         <div class="gambar">
+            <img src="asset/manga2.jpg" alt="">
+         </div>
+         <div class="judul">
+            <a href="#">Spotlight</a>
+         </div>
+         <div class="harga">IDK 99.900
+         </div>
+         <div>
+            <a href="#" class="cta"><span>Buy Now</span></a>
+         </div>
+      </div>
+      <div class="card">
+         <div class="gambar">
+            <img src="asset/manga3.jpg" alt="">
+         </div>
+         <div class="judul">
+            <a href="#">Boku no Hero Academia</a>
+         </div>
+         <div class="harga">IDK 99.900
+         </div>
+         <div>
+            <a href="#" class="cta"><span>Buy Now</span></a>
+         </div>
+      </div>
+      <div class="card">
+         <div class="gambar">
+            <img src="asset/manga4.jpg" alt="">
+         </div>
+         <div class="judul">
+            <a href="#">Horimya</a>
+         </div>
+         <div class="harga">IDK 99.900
+         </div>
+         <div>
+            <a href="#" class="cta"><span>Buy Now</span></a>
+         </div>
+      </div>
+      <div class="card">
+         <div class="gambar">
+            <img src="asset/manga5.jpg" alt="">
+         </div>
+         <div class="judul">
+            <a href="#">Goodnight Punpun</a>
+         </div>
+         <div class="harga">IDK 99.900
+         </div>
+         <div>
+            <a href="#" class="cta"><span>Buy Now</span></a>
+         </div>
+      </div>
+      <div class="card">
+         <div class="gambar">
+            <img src="asset/manga6.jpg" alt="">
+         </div>
+         <div class="judul">
+            <a href="#">The Promised Neverland</a>
+         </div>
+         <div class="harga">IDK 99.900
+         </div>
+         <div>
+            <a href="#" class="cta"><span>Buy Now</span></a>
+         </div>
+      </div>
+      <div class="card">
+         <div class="gambar">
+            <img src="asset/manga7.jpg" alt="">
+         </div>
+         <div class="judul">
+            <a href="#">Sakamoto Days</a>
+         </div>
+         <div class="harga">IDK 99.900
+         </div>
+         <div>
+            <a href="#" class="cta"><span>Buy Now</span></a>
+         </div>
+      </div>
+      <div class="card">
+         <div class="gambar">
+            <img src="asset/manga8.jpg" alt="">
+         </div>
+         <div class="judul">
+            <a href="#">Chainsawman</a>
+         </div>
+         <div class="harga">IDK 99.900
+         </div>
+         <div>
+            <a href="#" class="cta"><span>Buy Now</span></a>
+         </div>
+      </div>
+      <div class="card">
+         <div class="gambar">
+            <img src="asset/manga9.jpg" alt="">
+         </div>
+         <div class="judul">
+            <a href="#">Skip to Loafer</a>
+         </div>
+         <div class="harga">IDK 99.900
+         </div>
+         <div>
+            <a href="#" class="cta"><span>Buy Now</span></a>
+         </div>
+      </div>
+   </div>
+</section>
+<!--manga -->
+
+
+<!-- Footer -->
+<footer>
+   <div class="contact">
+      <div class="contact__help">
+         <h4>Features</h4>
+         <ul>
+            <li><a href="#">Alpha Store</a></li>
+            <li><a href="#">Figure Rescue</a>
+            </li><li><a href="#">Help Center (FAQ)</a></li>
+            <li></li><li><a class="" href="#">Unique Request</a></li>
+            <li><a href="#">Partner Area (B2B Platform)</a></li>
+         </ul>
+      </div>
+      <div class="contact__help">
+         <h4>Sound Your Idea!</h4>
+         <ul>
+            <li><a href="#">Lapor Bug</a></li>
+            <li><a href="#">Feedback</a></li>
+         </ul>
+      </div>
+      <div class="contact__tos">
+         <h4>Terms of Service</h4>
+         <ul>
+            <li><a class="" href="#">Terms and Conditions</a></li>
+            <li><a class="" href="#">Privacy Policy</a></li>
+            <li><a class="" href="#">Return Policy</a></li>
+         </ul>
+      </div>
+         <div class="contact__location">
+            <h4>Visit Eden</h4>
+            <ul>
+               <li><a href="#">Jl. Dr. KRT Radjiman Widyodiningrat <br> Jl. Kp. Pulo Jahe, <br>
+                  Jatinegara, Kec. Cakung, Kota Jakarta Timur,<br>
+                   Daerah Khusus Ibukota Jakarta 13930</a>
+               </li>
+            </ul>
+            <div class="contact__payment">
+               <h4>Metode Pembayaran</h4>
+               <ul>
+                  <li><img src="asset/bca.png" alt="BCA Logo"></li>
+                  <li><img src="asset/mandiri.png" alt="Mandiri Logo"></li>
+                  <li><img src="asset/bni.png" alt="BNI Logo" style="margin-top: 13px;"></li>
+                  <li><img src="asset/qris.svg" alt="QRIS Logo"></li>
+               </ul>
+            </div>
+         </div>
+         <div class="contact__sosmed">
+            <h4>Interact with Eden</h4>
+            <ul>
+               <a href=""><li data-feather="facebook"></li></a>
+               <a href=""><li data-feather="instagram"></li></a>
+               <a href=""><li data-feather="twitter"></li></a>
+               <a href=""><li data-feather="phone">0859 5930 2131</li></a>
+               <a href=""><li data-feather="mail">e-support@Eden.id</li></a>
+            </ul>
+         </div>
+      </div>
+      <div class="copyright">
+      <span class="tagline" style="float: left;">Ayo cintai hobimu bareng Eden!</span>
+      <span class="copy" style="float: right;">© 2023 Andika Syarrell Irawan / PT. Jaya Makmur</span>
+      </div>
+</footer>
+<!-- Footer -->
+
+
+
+<!-- Feather -->
+<script>
+        feather.replace();
+      </script>
+
+      <!-- SwiperJs -->
+      <script src="js/swiper-bundle.min.js"></script>
+      
+      <!-- js -->
+      <script src="js/script.js"></script>
+      
+      
+   </body>
+</html>
