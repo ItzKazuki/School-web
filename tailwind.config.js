@@ -26,6 +26,10 @@ module.exports = {
           '900': '#603808',
           'dark' :'#583101'
         }
+      },
+      screens: {
+        'tablet': {'max':'640px'},
+        // => @media (min-width: 640px) { ... }
       }
     },
   },

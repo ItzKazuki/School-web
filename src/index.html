@@ -15,82 +15,29 @@
   <body class="bg-brown-500">
    
     <!-- nav -->
-    <nav
-      id="navbar"
-      class="fixed w-full z-20 top-0 start-0 text-brown-500 md:rounded-b-lg">
-      <div
-        class="max-w-[1215px] flex flex-wrap  items-center mx-auto p-4">
-        <!-- icons -->
-        <a href="#home" class="flex items-center space-x-3 rtl:space-x-reverse">
-          <img src="../assets/Logo.png" class="h-8" alt="X RPL 2 Logo" />
-        </a>
-        <button
-          data-collapse-toggle="navbar-sticky"
-          type="button"
-          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-brown-500 rounded-lg md:hidden hover:bg-brown-100 focus:outline-none focus:ring-2 focus:ring-brown-200 dark:text-brown-400 dark:hover:bg-brown-700 dark:focus:ring-brown-600"
-          aria-controls="navbar-sticky"
-          aria-expanded="false">
-          <span class="sr-only">Open main menu</span>
-          <!-- <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="#e7bc91" viewBox="0 0 17 14">
-              <path stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
-          </svg> -->
-          <i class="fa-solid fa-bars" aria-hidden="true"></i>
-        </button>
-        <div
-          class="items-center justify-between md:ml-[15rem] w-full md:flex md:w-auto md:order-1"
-          id="navbar-sticky">
-          <ul
-            class="flex flex-col p-4 md:p-0 mt-4 font-semibold font-poppins text-2xl border rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
-            <li>
-              <a
-                href="#"
-                class="block py-2 px-3 rounded md:bg-transparent hover:text-brown-400 font-bold md:p-0"
-                aria-current="page"
-                >Home</a
-              >
-            </li>
-            <li>
-              <a
-                href="#news"
-                class="block py-2 px-3 rounded md:bg-transparent hover:text-brown-400 font-bold md:p-0"
-                >News</a
-              >
-            </li>
-            <li>
-              <a
-                href="#about-us"
-                class="block py-2 px-3 hover:text-brown-400 rounded md:p-0"
-                >About Us</a
-              >
-            </li>
-            <li>
-              <a
-                href="#achivement"
-                class="block py-2 px-3 hover:text-brown-400 rounded md:p-0"
-                >Achivement</a
-              >
-            </li>
-            <li>
-              <a
-                href="#leader-and-coleader"
-                class="block py-2 px-3 hover:text-brown-400 rounded md:p-0"
-                >Our Leader</a
-              >
-            </li>
-            <li>
-              <a
-                href="marketplace.html"
-                class="block py-2 px-3 hover:text-brown-400 rounded md:p-0"
-                >Warsentwo</a
-              >
-            </li>
-          </ul>
-        </div>
-        <div>
-          <a href="" class="p"><img src="./../assets/search.svg" alt=""></a>
-        </div>
+    <nav class="navbar" id="navbar">
+      <div class="logo">
+        <a href="#"><img src="./../assets/Logo.png" alt="" class="logo"></a>
       </div>
-    </nav>
+
+      <div class="navbar-nav">
+          <a href="#news">News</a>
+          <a href="#about">About Us</a>
+          <a href="#achivement">Achivement</a>
+          <a href="marketplace.html">WARSENTWO</a>
+      </div>
+
+      <div class="navbar-extra">
+          <a href="#"id="search-button"><img src="./../assets/search.svg" alt=""></a>
+          <a href="#"id="hambuger-menu"><img src="./../assets/menu.svg" alt=""></a>
+      </div>
+
+
+      <div class="search-form">
+       <input type="search" id="search-box" placeholder="Search">
+       <label for="search-box"><img src="asset/search.svg" alt=""></i></label>
+    </div>
+      </nav>
     <!-- nav end -->
     
     <!-- using js for change the backgroud! -->
