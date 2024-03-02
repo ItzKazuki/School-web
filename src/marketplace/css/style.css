@@ -99,13 +99,6 @@ body{
     color: var(--primary);
 }
 
-
-
-#hambuger-menu{
-    display: none;
-}
-
-
 .navbar .search-form{
   position: absolute;
   top: 100%;
@@ -138,124 +131,6 @@ body{
   margin-right: 1.5rem;
   color: #010101;
 }
-
-.shopping-cart{
-  position: absolute;
-  top: 100%;
-  right: -100%;
-  height: 100vh;
-  width: 30rem;
-  padding: 0 1.5rem;
-  color: var(--bg);
-  background-color: white;
-  transition: 0.5s;
-}
-
-.cart-item{
-  margin: 2rem 0;
-  display: flex;
-  align-items: center;
-  gap: 1.5rem;
-  padding-bottom: 1rem;
-  border-bottom: #000000 1px dashed;
-  position: relative;
-}
-
-.shopping-cart h3{
-  font-size: 1.6rem;
-  padding-bottom: 0.5;
-}
-
-.shopping-cart .item-price{
-  font-size: 1.25rem;
-}
-
-.shopping-cart .del-item{
-  position: absolute;
-  right: 1rem;
-  cursor: pointer;
-}
-
-.shopping-cart img{
-  height: 5rem;
-  border-radius: 10%;
-  border: #010101 1px solid;
-}
-
-.navbar .shopping-cart.aktif{
-  right: 0;
-}
-
-
-/* LOGIN */
-.user-login{
-  position: absolute;
-  display: inline-block;
-  align-items: center;
-  top: 180%;
- right: 36%;
-}
-
-.hide {
-  display: none;
-}
-
-.user-login span{
-  color: #000000;
-  cursor: pointer;
-  position: absolute;
-  font-size: 15px;
-  right: 3%;
-  top: 3%;
-}
-
-.user-login .login{
-  background-color: rgba(255, 255, 255, 0.3);
-  width: 30rem;
-  height: 30rem;
-  font-size: 15px;
-  color: #010101;
-  border-radius: 5px;
-}
-
-.user-login .login form{
-  padding-left: 3rem;
-  width: 300px;
-}
-
-.user-login .login form input{
-  width: 268px;
-  height: 25px;
-  border-radius: 5px;
-  margin-bottom: 8px;
-}
-
-.user-login .login form #login-btn{
-  cursor: pointer;
- background-color: var(--primary);
- color: #fff;
-}
-
-.user-login .login form #login-btn:hover{
-  opacity: 0.8;
-}
-
-.user-login .login a{
-  display: inline;
-  margin-left: 3rem;
-  color: #ffff;
-  cursor: pointer;
-  font-size: 14px;
-}
-
-.user-login .login  a:hover{
-  color: var(--primary);
-}
-/* LOGIN
-
-*/
-
-
 /* nav */
 
 
@@ -621,6 +496,10 @@ align-items: center;
     html {
         font-size: 75%;
     }
+
+#hambuger-menu{
+  display: none;
+}
     .card__container {
       max-width: 1120px;
     }
@@ -644,10 +523,6 @@ align-items: center;
 @media (max-width:768px ){
   html {
         font-size: 62.5%;
-      }
-      
-      #hambuger-menu {
-        display: inline-block;
       }
       
     .navbar .navbar-nav {

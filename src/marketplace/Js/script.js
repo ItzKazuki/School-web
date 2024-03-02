@@ -6,7 +6,7 @@ document.querySelector('#hambuger-menu').onclick = ( ) =>{navbarNav.classList.to
 // deactive
 const hambuger = document.querySelector('#hambuger-menu');
 const sb = document.querySelector('#search-button')
-const sp = document.querySelector('#shopping-cart')
+
 
 document.addEventListener('click', function (e) {
     if(!hambuger.contains(e.target)&&!navbarNav.contains(e.target)){
@@ -15,25 +15,7 @@ document.addEventListener('click', function (e) {
     if(!sb.contains(e.target)&&!searchForm.contains(e.target)){
        searchForm.classList.remove('aktif');
     }
-    if(!sp.contains(e.target)&&!spForm.contains(e.target)){
-      spForm.classList.remove('aktif');
-    }
 });
-
-
-
-// LOGIN
-document.getElementById('user').addEventListener('click', () => {
-  document.getElementById('user-login').classList.remove('hide')
-})
-
-document.getElementById('exit').addEventListener('click', () => {
-  document.getElementById('user-login').classList.add('hide')
-})
-
-// LOGIN
-
-
 
 // tombol search
 const searchForm = document.querySelector('.search-form');
@@ -44,18 +26,6 @@ document.querySelector('#search-button').onclick = (e) => {
   searchBox.focus();
   e.preventDefault();
 };
-
-
-// Shopping-cart
-const spForm = document.querySelector('.shopping-cart');
-const spBox = document.querySelector('#shopping-cart');
-
-document.querySelector('#shopping-cart').onclick = (e) => {
-  spForm.classList.toggle('aktif');
-  spBox.focus();
-  e.preventDefault();
-}
-
 
 // Homepage-SlideShow
 let slider = document.querySelector('.slider .list');
