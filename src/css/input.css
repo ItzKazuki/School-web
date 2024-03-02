@@ -90,37 +90,25 @@
   left: 0;
 }
 
-
-.navbar .navbar-logo{
-  font-size: 2rem;
-  font-weight: 700;
-  color: aliceblue;
-  font-style: italic;
-}
-
-.navbar .navbar-logo span{
-  color: var(--primary);
-}
-
-
 .navbar .navbar-nav a{
   color: #fff;
   display: inline-block;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   margin: 0 1rem;
   margin-top: 16px;
+  font-weight: bold;
 }
 
 
 .navbar .navbar-nav a:hover{
-  color: var(--primary);
+  color: #d4a278 ;
 }
 
 .navbar .navbar-nav a::after{
   content: '';
   display: block;
   padding: 0.5rem;
-  border-bottom: 0.1rem solid var(--primary);
+  border-bottom: 0.1rem solid #583101;
   transform: scaleX(0);
   transition: 0.2s linear;
 }
@@ -128,7 +116,6 @@
 
 .navbar .navbar-nav a:hover::after{
   transform: scaleX(0.5);
-
 }
 
 
@@ -141,7 +128,7 @@
 }
 
 .navbar .navbar-extra img:hover{
-  color: var(--primary);
+  color: #d4a278;
 }
 
 
@@ -207,7 +194,7 @@ color: #010101;
       }
 
       .navbar .navbar-nav a {
-        color: var(--bg);
+        color: #d4a278;
         display: block;
         margin: 1.5rem;
         padding: 0.5rem;
