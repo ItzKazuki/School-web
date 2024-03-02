@@ -22,10 +22,26 @@
   }
 })();
 
+// element by id
+let titlePage = document.getElementById('title-page');
+let news = document.getElementById('news');
+let navbar = document.getElementById('navbar');
+
+const defaultTitle = titlePage.innerHTML;
+
+const titlePages = {
+  651: 'News ' + defaultTitle,
+  1543: 'About Us ' + defaultTitle,
+  2255: 'Achievement ' + defaultTitle,
+  3081: 'Leader & Co-Leader ' + defaultTitle,
+  default: 'Home' + defaultTitle
+}
+
+titlePage.innerHTML = titlePage.default;
 window.addEventListener('scroll', () => {
-  let news = document.getElementById('news');
-  let navbar = document.getElementById('navbar');
-  let scrollTop = window.scrollY;
+  let scrollTop = window.scrollY ?? 0;
+
+  titlePage.innerHTML = scrollTop == 0 ? titlePages.default : titlePages[scrollTop];
 
   if(scrollTop <= news.offsetTop) {
     navbar.classList.remove("bg-brown-800");
