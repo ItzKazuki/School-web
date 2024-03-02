@@ -7,7 +7,6 @@ module.exports = {
     "./src/**/*.{html, js}",
     "./src/index.html",
     "./node_modules/flowbite/**/*.js",
-    "./src/marketplace.html",
   ],
   theme: {
     extend: {
