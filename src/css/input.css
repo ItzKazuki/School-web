@@ -62,7 +62,6 @@
   }
   
   .navbar .navbar-nav a{
-    color: #bc8a5f;
     display: inline-block;
     font-size: 1.8rem;
     margin: 0 1rem;
@@ -112,7 +111,6 @@
     height: 100%;
     width: 100%;
     font-size: 1.6rem;
-    color: #010101;
     padding: 1rem;
   }
   
