@@ -3,3 +3,4 @@ watch
 dist/*
 dist/output.css
 package-lock.json
+src/css/output.css
