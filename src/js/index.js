@@ -14,11 +14,11 @@
 // element by id
 let titlePage = document.getElementById('title-page');
 let news = document.getElementById('news');
-let navbar = document.getElementById('navbar');
-const navbarNav = document.querySelector('#nav-urls');
+let navbar = document.querySelector('.navbar');
+const navbarNav = document.querySelector('.navbar-nav');
 const hambuger = document.querySelector('#hambuger-menu');
 const sb = document.querySelector('#search-button');
-const searchForm = document.querySelector('#nav-search');
+const searchForm = document.querySelector('.search-form');
 const searchBox = document.querySelector('#search-box');
 
 // const defaultTitle = titlePage.innerHTML;
