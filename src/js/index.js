@@ -1,16 +1,8 @@
 (function() {
   "use strict";
-  /**
-   * Preloader
-   */
-  let preloader = document.querySelector('#preloader');
-  if (preloader) {
-    window.addEventListener('load', () => {
-      preloader.remove()
-    });
-  }
 
   // element by id
+  let preloader = document.querySelector('#preloader');
   let titlePage = document.getElementById('title-page');
   let news = document.getElementById('about-us');
   let navbar = document.querySelector('.navbar');
@@ -19,16 +11,27 @@
   const sb = document.querySelector('#search-button');
   const searchForm = document.querySelector('.search-form');
   const searchBox = document.querySelector('#search-box');
+  const searchIcon = document.getElementById('search-icon');
+  const menuIcon = document.getElementById('menu-icon');
+  
+  /**
+   * Preloader
+   */
+  if (preloader) {
+    window.addEventListener('load', () => {
+      preloader.remove();
+    });
+  }
 
-  // const defaultTitle = titlePage.innerHTML;
+  const defaultTitle = titlePage.innerHTML;
 
-  // const titlePages = {
-  //   651: 'News ' + defaultTitle,
-  //   1543: 'About Us ' + defaultTitle,
-  //   2255: 'Achievement ' + defaultTitle,
-  //   3081: 'Leader & Co-Leader ' + defaultTitle,
-  //   default: 'Home' + defaultTitle
-  // }
+  const titlePages = {
+    651: 'News ' + defaultTitle,
+    1543: 'About Us ' + defaultTitle,
+    2255: 'Achievement ' + defaultTitle,
+    3081: 'Leader & Co-Leader ' + defaultTitle,
+    default: 'Home' + defaultTitle
+  }
 
   // onclick
   document.querySelector('#hambuger-menu').onclick = () => navbarNav.classList.toggle('aktif');
@@ -51,16 +54,30 @@
 
   window.addEventListener('scroll', () => {
     let scrollTop = window.scrollY;
-    console.log(scrollTop)
   
     if(scrollTop <= news.offsetTop) {
-      console.log('ini di atas')
+      // diatas
+      navbarNav.classList.add("text-brown-800");
       navbar.classList.remove("bg-brown-800");
+
+      //change icon color
+      searchIcon.classList.remove('text-brown-500');
+      menuIcon.classList.remove('text-brown-500');
+      searchIcon.classList.add('text-brown-800');
+      menuIcon.classList.add('text-brown-800');
     }
   
     if(scrollTop >= news.offsetTop) {
-      console.log('udh di bawah banh')
+      // dibawah
+      navbarNav.classList.remove("text-brown-800");
+      navbarNav.classList.add("text-brown-500");
       navbar.classList.add("bg-brown-800");
+
+      //change icon color
+      searchIcon.classList.remove('text-brown-800');
+      menuIcon.classList.remove('text-brown-800');
+      searchIcon.classList.add('text-brown-500');
+      menuIcon.classList.add('text-brown-500');
     }
   })
 })();
