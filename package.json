@@ -6,8 +6,8 @@
     "email": "contact@kazukikun.space"
   },
   "scripts": {
-    "dev": "tailwindcss -i ./src/css/input.css -o ./dist/output.css --watch",
-    "build": "tailwindcss build ./src/css/input.css -o ./dist/build.css"
+    "dev": "tailwindcss -i ./src/css/input.css -o ./src/css/output.css --watch",
+    "build": "tailwindcss build -i ./src/css/input.css -o ./src/css/output.css"
   },
   "devDependencies": {
     "tailwindcss": "^3.4.1"
