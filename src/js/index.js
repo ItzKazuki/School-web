@@ -12,7 +12,7 @@
 
   // element by id
   let titlePage = document.getElementById('title-page');
-  let news = document.getElementById('news');
+  let news = document.getElementById('about-us');
   let navbar = document.querySelector('.navbar');
   const navbarNav = document.querySelector('.navbar-nav');
   const hambuger = document.querySelector('#hambuger-menu');
