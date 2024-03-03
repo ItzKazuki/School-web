@@ -204,12 +204,32 @@ color: #010101;
       .navbar .navbar-nav a::after {
         transform-origin: 0 0;
     }
-
+  
     .navbar .navbar-nav a:hover::after  {
-        transform: scaleX(0.2);
+      transform: scaleX(0.2);
     }
     
     .navbar .search-form{
       right: 2rem;
     }
   }
+
+  /* Animation Loading */
+  @-webkit-keyframes animate-preloader {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes animate-preloader {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+}

@@ -29,7 +29,6 @@ module.exports = {
       },
       screens: {
         'tablet': {'max':'640px'},
-        // => @media (min-width: 640px) { ... }
       }
     },
   },
