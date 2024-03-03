@@ -38,6 +38,13 @@ jobs:
         with:
           # Upload entire repository
           path: './src'
+      - name: Install Node.js v20
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: |
+          npm install
+          npm run build
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4

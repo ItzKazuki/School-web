@@ -7,7 +7,7 @@
   },
   "scripts": {
     "dev": "tailwindcss -i ./src/css/input.css -o ./dist/output.css --watch",
-    "build": "tailwindcss build ./src/css/input.css -o ./dist/build.css"
+    "build": "tailwindcss build -i ./src/css/input.css -o ./dist/output.css"
   },
   "devDependencies": {
     "tailwindcss": "^3.4.1"
