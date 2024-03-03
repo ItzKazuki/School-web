@@ -47,7 +47,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 1rem 3%;
-    margin-top:-15px;
+    margin-top:-7px;
     position: fixed;
     top: 0;
     left: 0;
@@ -66,7 +66,7 @@
     display: inline-block;
     font-size: 1.8rem;
     margin: 0 1rem;
-    margin-top: 16px;
+    /* margin-top: 16px; */
     font-weight: bold;
   }
   
@@ -88,13 +88,13 @@
   }
   
   /* icon */
-  .navbar .navbar-extra img{
-    color: #fff;
+  .navbar .navbar-extra a {
     margin: 0 0.5rem;
+    margin-top: 16px;
     display:inline;
   }
   
-  .navbar .navbar-extra img:hover{
+  .navbar .navbar-extra a::hover{
     color: #d4a278;
   }
   
@@ -147,7 +147,7 @@
       position: absolute;
       top: 100%;
       right: -100%;
-      background-color: rgba(255, 255, 255, 0.8);
+      background-color:#6f4518;
       width: 30rem;
       border-radius: 0 0 0px 10px;
   
