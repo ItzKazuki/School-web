@@ -3,121 +3,72 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home | X- RPL 2</title>
+
+    <title id="title-page">Home | X- RPL 2</title>
+
+    <!-- external style -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet" />
+    <!-- end external style -->
+
+    <!-- internal style -->
     <link rel="stylesheet" href="vendor/fontawsome-icon/css/all.min.css" />
-    <link rel="stylesheet" href="../dist/output.css" />
+    <link rel="stylesheet" href="css/output.css" />
+    <!-- end internal style -->
   </head>
   <body class="bg-brown-500">
-    <!-- Nav -->
-    <nav
-      class="bg-brown-800 fixed w-full z-20 top-0 start-0 text-brown-500 sm:rounded-b-lg">
-      <div
-        class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <!-- icons -->
-        <a href="#home" class="flex items-center space-x-3 rtl:space-x-reverse">
-          <img src="../assets/Logo.png" class="h-8" alt="X RPL 2 Logo" />
-          <span class="self-center text-2xl font-semibold whitespace-nowrap"
-            >EXENTWO</span
-          >
-        </a>
-        <button
-          data-collapse-toggle="navbar-sticky"
-          type="button"
-          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-          aria-controls="navbar-sticky"
-          aria-expanded="false">
-          <span class="sr-only">Open main menu</span>
-          <!-- <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="#e7bc91" viewBox="0 0 17 14">
-              <path stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
-          </svg> -->
-          <i class="fa-solid fa-bars" aria-hidden="true"></i>
-        </button>
-        <div
-          class="items-center justify-between w-full md:flex md:w-auto md:order-1"
-          id="navbar-sticky">
-          <ul
-            class="flex flex-col p-4 md:p-0 mt-4 font-semibold font-poppins text-xl border rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
-            <li>
-              <a
-                href="#"
-                class="block py-2 px-3 rounded md:bg-transparent hover:text-brown-400 font-bold md:p-0"
-                aria-current="page"
-                >Home</a
-              >
-            </li>
-            <li>
-              <a
-                href="#news"
-                class="block py-2 px-3 rounded md:bg-transparent hover:text-brown-400 font-bold md:p-0"
-                >News</a
-              >
-            </li>
-            <li>
-              <a
-                href="#about-us"
-                class="block py-2 px-3 hover:text-brown-400 rounded md:p-0"
-                >About Us</a
-              >
-            </li>
-            <li>
-              <a
-                href="#achivement"
-                class="block py-2 px-3 hover:text-brown-400 rounded md:p-0"
-                >Achivement</a
-              >
-            </li>
-            <li>
-              <a
-                href="#leader-and-coleader"
-                class="block py-2 px-3 hover:text-brown-400 rounded md:p-0"
-                >Our Leader</a
-              >
-            </li>
-            <li>
-              <a
-                href="marketplace.html"
-                class="block py-2 px-3 hover:text-brown-400 rounded md:p-0"
-                >Warsentwo</a
-              >
-            </li>
-          </ul>
-        </div>
+    
+    <!-- nav -->
+    <nav class="navbar">
+      <div class="logo">
+        <a href="#"><img src="assets/Logo.png" alt="" class="logo"></a>
+      </div>
+
+      <div class="navbar-nav">
+        <a href="#news">News</a>
+        <a href="#about-us">About Us</a>
+        <a href="#achivement">Achivement</a>
+        <a href="marketplace/index.html">WARSENTWO</a>
+      </div>
+
+      <div class="navbar-extra">
+        <a href="#"id="search-button"><img src="assets/search.svg" alt=""></a>
+        <a href="#"id="hambuger-menu"><img src="assets/menu.svg" alt=""></a>
+      </div>
+
+      <div class="search-form">
+        <input type="search" id="search-box" class="bg-brown-400 rounded-lg outline outline-none" placeholder="Search">
+        <label for="search-box"><img src="asset/search.svg" alt=""></label>
       </div>
     </nav>
-    <!-- Nav END-->
-
-
+    <!-- nav end -->
+    
     <!-- using js for change the backgroud! -->
-
-
-    <!-- Home -->
+    
+    <!-- main -->
     <div
       id="home"
-      class="h-screen bg-[url('../assets/DSC_9316.JPG')] bg-center bg-cover bg-no-repeat bg-fixed flex justify-center items-center text-brown-400">
-      <div class="text-center mt-[20rem]">
-        <h1 id="home-content" class="font-bold text-4xl">All Story From Us</h1>
-        <p class="font-semibold text-xl py-4 px-40 mx-auto font-poppins">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim numquam
-          veritatis doloribus qui laudantium facere eum quis officia
-          necessitatibus est?
+      class="h-screen bg-[url('../assets/DSC_0182-1.JPG')] bg-center bg-cover bg-no-repeat bg-fixed flex justify-center  ">
+      <div class="text-center font-semibold px-10 py-[5rem]">
+        <h1 id="home-content" class="font-bold text-8xl mt-2"><span class="text-brown-700">EXEN</span>TWO</h1>
+        <p class="py-5 mx-auto font-poppins max-w-[35rem] text-lg">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
         </p>
-        <a href="#about-us">
+        <!-- <a href="#about-us">
           <button
             class="text-brown-500 bg-brown-800 rounded-xl px-4 py-3 w-15 inline-block">
-            <span class="font-bold text-lg">Learn More About Us</span>
+            <span class="font-bold text-lg">Read More</span>
           </button>
-        </a>
+        </a> -->
       </div>
-      <span id="null"></span>
+      <span id="null" ><p class="flex justify-center items-baseline py-[7rem] text-white">Read More <i class="fa-solid fa-arrow-down-long"></i></p></i></span>
     </div>
-    <!-- Home END-->
+    <!-- end main -->
 
-<!-- news -->
+    <!-- news -->
     <div id="news" class="bg-brown-800 text-center px-20 py-10">
       <h1 class="font-bold text-4xl mt-10 mb-5 text-brown-500">News</h1>
       <div class="flex justify-between p-10">
@@ -237,7 +188,7 @@
         </div>
       </div>
     </div>
-<!-- news END-->
+    <!-- news end -->
 
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 250">
       <path
@@ -246,7 +197,7 @@
         d="M0,96L48,112C96,128,192,160,288,154.7C384,149,480,107,576,112C672,117,768,171,864,176C960,181,1056,139,1152,112C1248,85,1344,75,1392,69.3L1440,64L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path>
     </svg>
 
-<!-- about  -->
+    <!-- about -->
     <div id="about-us" class="text-center text-brown-800 px-20 py-10">
       <h1 class="font-bold text-4xl mt-10 mb-5">About Us</h1>
       <p class="px-10 text-lg text-justify font-poppins">
@@ -271,8 +222,7 @@
         </a>
       </div>
     </div>
-<!-- about End -->
-
+    <!-- about end -->
 
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 300">
       <path
@@ -281,8 +231,7 @@
         d="M0,160L48,181.3C96,203,192,245,288,245.3C384,245,480,203,576,176C672,149,768,139,864,165.3C960,192,1056,256,1152,256C1248,256,1344,192,1392,160L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
     </svg>
 
-
-    <!-- achivement -->
+    <!-- gallery -->
     <div id="achivement" class="px-20 py-10 bg-brown-800">
       <h1 class="font-bold text-4xl m-5 mb-6 text-brown-500 text-center">
         Achivement
@@ -292,47 +241,47 @@
           type="button"
           data-modal-target="default-modal"
           data-modal-toggle="default-modal">
-          <img src="../assets/DSC_9316.JPG" alt="Foto Kegiatan" width="300" />
+          <img src="assets/DSC_9316.JPG" alt="Foto Kegiatan" width="300" />
         </button>
         <button
           type="button"
           data-modal-target="default-modal"
           data-modal-toggle="default-modal">
-          <img src="../assets/DSC_9316.JPG" alt="Foto Kegiatan" width="300" />
+          <img src="assets/DSC_9316.JPG" alt="Foto Kegiatan" width="300" />
         </button>
         <button
           type="button"
           data-modal-target="default-modal"
           data-modal-toggle="default-modal">
-          <img src="../assets/DSC_9316.JPG" alt="Foto Kegiatan" width="300" />
+          <img src="assets/DSC_9316.JPG" alt="Foto Kegiatan" width="300" />
         </button>
         <button
           type="button"
           data-modal-target="default-modal"
           data-modal-toggle="default-modal">
-          <img src="../assets/DSC_9316.JPG" alt="Foto Kegiatan" width="300" />
+          <img src="assets/DSC_9316.JPG" alt="Foto Kegiatan" width="300" />
         </button>
         <button
           type="button"
           data-modal-target="default-modal"
           data-modal-toggle="default-modal">
-          <img src="../assets/DSC_9316.JPG" alt="Foto Kegiatan" width="300" />
+          <img src="assets/DSC_9316.JPG" alt="Foto Kegiatan" width="300" />
         </button>
         <button
           type="button"
           data-modal-target="default-modal"
           data-modal-toggle="default-modal">
-          <img src="../assets/DSC_9316.JPG" alt="Foto Kegiatan" width="300" />
+          <img src="assets/DSC_9316.JPG" alt="Foto Kegiatan" width="300" />
         </button>
         <button
           type="button"
           data-modal-target="default-modal"
           data-modal-toggle="default-modal">
-          <img src="../assets/DSC_9316.JPG" alt="Foto Kegiatan" width="300" />
+          <img src="assets/DSC_9316.JPG" alt="Foto Kegiatan" width="300" />
         </button>
       </div>
     </div>
-    <!-- achivement End -->
+    <!-- gallery end -->
 
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 250">
       <path
@@ -341,17 +290,17 @@
         d="M0,224L48,208C96,192,192,160,288,160C384,160,480,192,576,202.7C672,213,768,203,864,170.7C960,139,1056,85,1152,58.7C1248,32,1344,32,1392,32L1440,32L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path>
     </svg>
 
-    <!-- Lead-CO -->
+    <!-- lead-co -->
     <div id="leader-and-coleader" class="px-20 py-10">
       <h1 class="text-brown-800 font-bold text-4xl text-center mt-10 mb-5">
         Our Leader & Co-leader
       </h1>
       <div class="flex justify-center items-center mt-5">
         <button>
-          <img src="../assets/DSC_0095.jpg" alt="Leader Photo" width="400" />
+          <img src="assets/DSC_0095.jpg" alt="Leader Photo" width="400" />
         </button>
         <button class="ml-8">
-          <img src="../assets/DSC_0095.jpg" alt="Leader Photo" width="400" />
+          <img src="assets/DSC_0095.jpg" alt="Leader Photo" width="400" />
         </button>
       </div>
       <div class="flex justify-center mt-10">
@@ -363,7 +312,7 @@
         </a>
       </div>
     </div>
-    <!-- Lead-CO End -->
+    <!-- lead-co end -->
 
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 250">
       <path
@@ -372,8 +321,6 @@
         d="M0,96L48,112C96,128,192,160,288,181.3C384,203,480,213,576,208C672,203,768,181,864,186.7C960,192,1056,224,1152,229.3C1248,235,1344,213,1392,202.7L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
     </svg>
 
-
-    <!-- Footer -->
     <footer class="bg-brown-800 text-brown-500">
       <div id="footer-content" class="flex py-5 px-20">
         <div>
@@ -418,13 +365,12 @@
         </p>
       </div>
     </footer>
-    <!-- Footer End-->
 
-    <!-- Loading -->
+    <!-- loading -->
     <div
       id="preloader"
       class="fixed top-0 left-0 right-0 bottom-0 z-[100] overflow-hidden bg-brown-500"></div>
-      <!-- Loading -->
+      <!-- loading end -->
 
     <!-- Main modal -->
     <div
@@ -497,9 +443,9 @@
         </div>
       </div>
     </div>
-<!-- Main modal End -->
-    
+    <!-- modal end -->
+
   </body>
   <script src="js/index.js"></script>
-  <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
+  <script src="vendor/flowbite/dist/flowbite.min.js"></script>
 </html>
