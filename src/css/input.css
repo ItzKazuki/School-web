@@ -105,8 +105,8 @@
     position: absolute;
     top: 100%;
     right: 2%;
-    width: 50rem;
-    height: 5rem;
+    width: 33rem;
+    height: 3.5rem;
     display: flex;
     align-items: center;
     transform: scaleY(0);
