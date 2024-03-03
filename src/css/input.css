@@ -86,17 +86,6 @@
     transform: scaleX(0.5);
   }
   
-  /* icon */
-  .navbar .navbar-extra img{
-    color: #fff;
-    margin: 0 0.5rem;
-    display:inline;
-  }
-  
-  .navbar .navbar-extra img:hover{
-    color: #d4a278;
-  }
-  
   #hambuger-menu{
     display: none;
   }
