@@ -7,7 +7,6 @@ module.exports = {
     "./src/**/*.{html, js}",
     "./src/index.html",
     "./node_modules/flowbite/**/*.js",
-    "./src/marketplace.html",
   ],
   theme: {
     extend: {
@@ -27,6 +26,10 @@ module.exports = {
           '900': '#603808',
           'dark' :'#583101'
         }
+      },
+      screens: {
+        'tablet': {'max':'640px'},
+        // => @media (min-width: 640px) { ... }
       }
     },
   },

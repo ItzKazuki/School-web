@@ -69,3 +69,147 @@
   bottom: 0;
   background: linear-gradient(0deg, rgba(111, 69, 24, 1)1%, rgba(255, 255, 255, 0)50%);
 }
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.2rem 3%;
+  background-color: rgba(1, 1, 1, 0) ;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+
+.navbar .logo{
+  height: 40px;
+  width: 40px;
+  left: 0;
+}
+
+.navbar .navbar-nav a{
+  color: #fff;
+  display: inline-block;
+  font-size: 1.8rem;
+  margin: 0 1rem;
+  margin-top: 16px;
+  font-weight: bold;
+}
+
+
+.navbar .navbar-nav a:hover{
+  color: #d4a278 ;
+}
+
+.navbar .navbar-nav a::after{
+  content: '';
+  display: block;
+  padding: 0.5rem;
+  border-bottom: 0.1rem solid #583101;
+  transform: scaleX(0);
+  transition: 0.2s linear;
+}
+
+
+.navbar .navbar-nav a:hover::after{
+  transform: scaleX(0.5);
+}
+
+
+
+/* icon */
+.navbar .navbar-extra img{
+  color: #fff;
+  margin: 0 0.5rem;
+  display:inline;
+}
+
+.navbar .navbar-extra img:hover{
+  color: #d4a278;
+}
+
+
+
+#hambuger-menu{
+  display: none;
+}
+
+
+.navbar .search-form{
+position: absolute;
+top: 100%;
+right: 2%;
+width: 50rem;
+height: 5rem;
+display: flex;
+align-items: center;
+transform: scaleY(0);
+transform-origin: top;
+transition: 0.3s;
+}
+
+.navbar .search-form.aktif{
+transform: scaleY(1);
+}
+
+.navbar .search-form input{
+height: 100%;
+width: 100%;
+font-size: 1.6rem;
+color: #010101;
+padding: 1rem;
+}
+
+.navbar .search-form label{
+cursor: pointer;
+font-size: 2rem;
+margin-right: 1.5rem;
+color: #010101;
+}
+
+@media (max-width:768px ){
+  html {
+        font-size: 62.5%;
+      }
+      
+      #hambuger-menu {
+        display: inline-block;
+      }
+      
+    .navbar .navbar-nav {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        background-color: rgba(255, 255, 255, 0.8);
+        width: 30rem;
+        border-radius: 0 0 0px 10px;
+    
+      }
+      
+      .navbar .navbar-nav.aktif {
+        right: 0;
+      }
+
+      .navbar .navbar-nav a {
+        color: #d4a278;
+        display: block;
+        margin: 1.5rem;
+        padding: 0.5rem;
+        font-size: 2rem;
+      }
+
+      .navbar .navbar-nav a::after {
+        transform-origin: 0 0;
+    }
+
+    .navbar .navbar-nav a:hover::after  {
+        transform: scaleX(0.2);
+    }
+    
+    .navbar .search-form{
+      right: 2rem;
+    }
+  }
