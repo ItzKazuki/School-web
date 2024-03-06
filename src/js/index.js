@@ -5,6 +5,7 @@
   let preloader = document.querySelector('#preloader');
   let titlePage = document.getElementById('title-page');
   let news = document.getElementById('about-us');
+  let nullId = document.getElementById('null');
   let navbar = document.querySelector('.navbar');
   const navbarNav = document.querySelector('.navbar-nav');
   const hambuger = document.querySelector('#hambuger-menu');
@@ -69,7 +70,7 @@
   window.addEventListener('scroll', () => {
     let scrollTop = window.scrollY;
   
-    if(scrollTop <= news.offsetTop) {
+    if(scrollTop <= nullId.offsetTop) {
       // diatas
       navbarNav.classList.add("text-brown-800");
       navbar.classList.remove("bg-brown-800");
@@ -83,7 +84,7 @@
       xIcon.classList.add('text-brown-800');
     }
   
-    if(scrollTop >= news.offsetTop) {
+    if(scrollTop >= nullId.offsetTop) {
       // dibawah
       navbarNav.classList.remove("text-brown-800");
       navbarNav.classList.add("text-brown-500");
