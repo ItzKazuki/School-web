@@ -127,9 +127,9 @@
     color: #010101;
   }
   
-  @media (max-width:768px ){
+  @media (max-width:640px ){
     html {
-      font-size: 62.5%;
+      font-size: 50%;
     }
           
     #hambuger-menu {
@@ -189,11 +189,6 @@
       transform: rotate(360deg);
     }
   }
-
-
-
-
-
 
 *::before,
 *::after {
