@@ -2,7 +2,7 @@
 module.exports = {
   plugins: [
     require('flowbite/plugin'),
-    require('daisyui')
+    require("daisyui"),
   ],
   content: [
     "./src/**/*.{html, js}",

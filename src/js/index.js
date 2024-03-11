@@ -5,6 +5,7 @@
   let preloader = document.querySelector('#preloader');
   let titlePage = document.getElementById('title-page');
   let news = document.getElementById('about-us');
+  let nullId = document.getElementById('null');
   let navbar = document.querySelector('.navbar');
   const navbarNav = document.querySelector('.navbar-nav');
   const hambuger = document.querySelector('#hambuger-menu');
@@ -13,6 +14,7 @@
   const searchBox = document.querySelector('#search-box');
   const searchIcon = document.getElementById('search-icon');
   const menuIcon = document.getElementById('menu-icon');
+  const xIcon = document.getElementById('x-icon');
   
   /**
    * Preloader
@@ -20,6 +22,7 @@
   if (preloader) {
     window.addEventListener('load', () => {
       preloader.remove();
+      /(android)/i.test(navigator.userAgent) ? alert('kamu menggunakan android, beberapa headphone mungkin tidak support karena masih tahap pengembangan') : "";
     });
   }
 
@@ -48,14 +51,26 @@
 
   document.querySelector('#search-button').onclick = (e) => {
     searchForm.classList.toggle('aktif');
+    xIcon.classList.remove('hidden');
+    xIcon.classList.add('inline');
+    searchIcon.classList.remove('inline');
+    searchIcon.classList.add('hidden');
     searchBox.focus();
     e.preventDefault();
   };
 
+  document.querySelector('#x-button').onclick = (e) => {
+    searchIcon.classList.add('inline');
+    searchIcon.classList.remove('hidden');
+    xIcon.classList.remove('inline');
+    xIcon.classList.add('hidden');
+    e.preventDefault();
+  }
+
   window.addEventListener('scroll', () => {
     let scrollTop = window.scrollY;
   
-    if(scrollTop <= news.offsetTop) {
+    if(scrollTop <= nullId.offsetTop) {
       // diatas
       navbarNav.classList.add("text-brown-800");
       navbar.classList.remove("bg-brown-800");
@@ -63,11 +78,13 @@
       //change icon color
       searchIcon.classList.remove('text-brown-500');
       menuIcon.classList.remove('text-brown-500');
+      xIcon.classList.remove('text-brown-500');
       searchIcon.classList.add('text-brown-800');
       menuIcon.classList.add('text-brown-800');
+      xIcon.classList.add('text-brown-800');
     }
   
-    if(scrollTop >= news.offsetTop) {
+    if(scrollTop >= nullId.offsetTop) {
       // dibawah
       navbarNav.classList.remove("text-brown-800");
       navbarNav.classList.add("text-brown-500");
@@ -76,8 +93,32 @@
       //change icon color
       searchIcon.classList.remove('text-brown-800');
       menuIcon.classList.remove('text-brown-800');
+      xIcon.classList.remove('text-brown-800');
       searchIcon.classList.add('text-brown-500');
       menuIcon.classList.add('text-brown-500');
+      xIcon.classList.add('text-brown-500')
     }
   })
 })();
+
+var TrandingSlider = new Swiper('.tranding-slider', {
+  effect: 'coverflow',
+  grabCursor: true,
+  centeredSlides: true,
+  loop: true,
+  slidesPerView: 'auto',
+  coverflowEffect: {
+    rotate: 0,
+    stretch: 0,
+    depth: 100,
+    modifier: 2.5,
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  }
+});

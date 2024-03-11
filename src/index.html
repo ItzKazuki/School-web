@@ -1,10 +1,23 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth focus:scroll-auto">
+<html lang="en" class="scroll-smooth focus:scroll-auto font-serif no-scrollbar">
   <head>
+    <!-- meta tag -->
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="EXENTWO Web Page" />
+    <meta name="keywords" content="School, x RPL 2" />
+    <meta name="author" content="ItzKazuki, Orca" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#6f4518" />
+    <!-- end meta tag -->
 
     <title id="title-page">Home | X- RPL 2</title>
+
+    <!-- icon -->
+    <link rel="icon" type="image/icon" href="assets/Logo.png" />
+    <!-- end icon -->
+
+    <!-- Swiper -->
+    <link rel="stylesheet" href="vendor/swiper/swiper-bundle.min.css">
 
     <!-- external style -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -15,16 +28,16 @@
     <!-- end external style -->
 
     <!-- internal style -->
-    <link rel="stylesheet" href="vendor/fontawsome-icon/css/all.min.css" />
-    <link rel="stylesheet" href="css/output.css" />
+    <link rel="stylesheet" href="vendor/fontawsome-icon/css/all.css" type="text/css"/>
+    <link rel="stylesheet" href="css/output.css" type="text/css" />
     <!-- end internal style -->
   </head>
+
   <body class="bg-brown-500">
-   
     <!-- nav -->
     <nav class="navbar">
       <div class="logo">
-        <a href="#"><img src="assets/Logo.png" alt="" class="logo"></a>
+        <a href="#"><img src="assets/Logo.png" alt="logo EXENTWO" class="logo"/></a>
       </div>
 
       <div class="navbar-nav text-brown-800">
@@ -35,28 +48,41 @@
       </div>
 
       <div class="navbar-extra">
-        <!-- <a href="#"id="search-button"><img src="assets/search.svg" alt=""></a> -->
-        <a href="#" id="search-button"><i id="search-icon" class="fa-solid fa-magnifying-glass text-brown-800 my-0 mx-[0.5rem] inline hover:text-brown-600 fa-2xl"></i></a>
-        <a href="#" id="hambuger-menu"><i id="menu-icon" class="fa-solid fa-bars text-brown-800 my-0 mx-[0.5rem] inline hover:text-brown-600 fa-2xl"></i></a>
+        <button id="search-button">
+          <i id="search-icon" class="fa-solid fa-magnifying-glass text-brown-800 my-0 mx-[0.5rem] hover:text-brown-600 fa-2xl "></i>
+        </button>
+        <button id="x-button">
+          <i id="x-icon" class="fa-solid fa-x text-brown-800 my-0 mx-[0.5rem] hover:text-brown-600 fa-2xl hidden"></i>
+        </button>
+        <button id="hambuger-menu">
+          <i id="menu-icon" class="fa-solid fa-bars text-brown-800 my-0 mx-[0.5rem] hover:text-brown-600 fa-2xl"></i>
+        </button>
       </div>
 
       <div class="search-form">
-        <input type="search" id="search-box" class="bg-brown-400 rounded-lg outline outline-none placeholder-brown-800 text-brown-800" placeholder="Search">
-        <label for="search-box"><img src="asset/search.svg" alt=""></label>
+        <input
+          type="search"
+          id="search-box"
+          class="bg-brown-400 rounded-lg outline outline-none placeholder-brown-800 text-brown-800"
+          placeholder="Search" />
+        <!-- <label for="search-box"><i id="search-icon" class="fa-solid fa-magnifying-glass text-brown-800 my-0 mx-[0.5rem] inline hover:text-brown-600"></i></label> -->
         <!-- <label for="search-box"><i class="fa-solid fa-magnifying-glass"></i></label> -->
       </div>
     </nav>
     <!-- nav end -->
-    
+
     <!-- using js for change the backgroud! -->
-    
+
     <!-- main -->
     <div
       id="home"
-      class="h-screen bg-[url('../assets/potbar.jpg')] bg-center bg-cover bg-no-repeat bg-fixed flex justify-center  ">
-      <div class="text-center font-semibold px-10 py-[5rem]">
-        <h1 id="home-content" class="font-bold text-8xl mt-2"><span class="text-brown-700">EXEN</span>TWO</h1>
-        <p class="py-5 mx-auto font-poppins max-w-[35rem] text-lg">
+      class="h-screen bg-[url('../assets/potbar.jpg')] bg-center bg-cover bg-no-repeat bg-fixed flex justify-center">
+      <div
+        class="text-center font-semibold px-7 pt-[25rem] pb-[5rem] md:pt-[5rem] md:pb-[5rem]">
+        <h1 id="home-content" class="font-bold text-8xl mt-2">
+          <span class="text-brown-700">EXEN</span>TWO
+        </h1>
+        <p class="py-5 mx-auto font-poppins max-w-[35rem] text-2xl md:text-lg">
           Lorem ipsum dolor sit amet consectetur adipisicing elit.
         </p>
         <!-- <a href="#about-us">
@@ -66,14 +92,20 @@
           </button>
         </a> -->
       </div>
-      <span id="null" ><p class="flex justify-center items-baseline py-[7rem] text-white">Read More <i class="fa-solid fa-arrow-down-long"></i></p></i></span>
+      <span id="null">
+        <p class="flex justify-center items-baseline py-[7rem] text-white">
+          Read More <i class="fa-solid fa-arrow-down-long"></i>
+        </p>
+      </span>
     </div>
     <!-- end main -->
 
     <!-- about -->
-    <div id="about-us" class="text-center bg-brown-800 text-brown-500 px-20 py-10">
-      <h1 class="font-bold text-4xl mt-10 mb-5">About Us</h1>
-      <p class="px-10 text-lg text-justify font-poppins">
+    <div
+      id="about-us"
+      class="text-center bg-brown-800 text-brown-500 px-20 py-10">
+      <h1 class="font-bold mt-10 mb-5 text-7xl md:text-4xl">About Us</h1>
+      <p class="px-10 text-justify font-poppins text-3xl md:text-lg">
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente aut
         accusantium exercitationem enim dolores aliquid alias dolorum
         reprehenderit pariatur nihil. Odit dolores ab minus similique, at
@@ -85,11 +117,11 @@
         dignissimos impedit blanditiis, iusto natus beatae ullam ipsam ratione.
       </p>
       <div class="mt-10">
-        <h1 class="font-bold text-4xl mb-10">Follow Us</h1>
+        <h1 class="font-bold mb-10 text-7xl md:text-4xl">Follow Us</h1>
         <a href="https://instagram.com/@someone" target="_blank">
           <button
-            class="text-brown-800 bg-brown-500 rounded-xl px-3 py-3 w-15 inline-block">
-            <i class="fa-brands fa-instagram fa-2xl"></i>
+            class="text-brown-800 bg-brown-500 rounded-xl px-7 py-7 text-3xl w-15 inline-block md:px-3 md:py-3 md:text-lg">
+            <i class="fa-brands fa-instagram fa-xl"></i>
             @someone
           </button>
         </a>
@@ -106,21 +138,22 @@
 
     <!-- lead-co -->
     <div id="leader-and-coleader" class="px-20 py-10">
-      <h1 class="text-brown-800 font-bold text-4xl text-center mt-10 mb-5">
+      <h1
+        class="text-brown-800 font-bold text-center mt-10 mb-5 text-5xl md:text-4xl">
         Our Leader & Co-leader
       </h1>
-      <div class="flex justify-center items-center mt-5">
+      <div class="sm:flex sm:justify-center items-center mt-5">
         <button>
           <img src="assets/DSC_0095.jpg" alt="Leader Photo" width="400" />
         </button>
-        <button class="ml-8">
+        <button class="mt-4 sm:mt-0 sm:ml-8">
           <img src="assets/DSC_0095.jpg" alt="Leader Photo" width="400" />
         </button>
       </div>
       <div class="flex justify-center mt-10">
         <a href="members.html">
           <button
-            class="text-brown-500 bg-brown-800 rounded-xl px-4 py-4 w-15 inline-block text-xl font-poppins">
+            class="text-brown-500 bg-brown-800 rounded-xl px-7 py-7 text-3xl w-15 inline-block md:px-3 md:py-3 md:text-xl">
             All Members
           </button>
         </a>
@@ -137,127 +170,111 @@
 
       <!-- news -->
       <div id="news" class="bg-brown-800 text-center px-20 py-10">
-        <h1 class="font-bold text-4xl mt-10 mb-5 text-brown-500">News</h1>
-        <div class="flex justify-between p-10">
-          <div
-            class="max-w-sm bg-brown-500 border border-brown-dark rounded-lg shadow">
-            <a href="#">
-              <img
-                class="rounded-t-lg"
-                src="https://flowbite.com/docs/images/blog/image-1.jpg"
-                alt="" />
-            </a>
-            <div class="p-5">
-              <a href="#">
-                <h5 class="mb-2 text-2xl font-bold tracking-tight text-brown-800">
-                  Noteworthy technology acquisitions 2021
-                </h5>
-              </a>
-              <p class="mb-3 font-normal text-brown-800 font-poppins">
-                Here are the biggest enterprise technology acquisitions of 2021 so
-                far, in reverse chronological order.
-              </p>
-              <a
-                href="#"
-                class="inline-flex font-poppins items-center px-3 py-2 text-sm font-medium text-center text-brown-500 bg-brown-800 rounded-lg hover:bg-brown-900 focus:ring-4 focus:outline-none focus:ring-blue-300">
-                Read more
-                <svg
-                  class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 14 10">
-                  <path
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M1 5h12m0 0L9 1m4 4L9 9" />
-                </svg>
-              </a>
+        <h1 class="font-bold mt-10 text-brown-500 text-7xl md:text-4xl">News</h1>
+        <section id="tranding">
+          <div class="container">
+            <div class="swiper tranding-slider">
+              <div class="swiper-wrapper">
+                <!-- Slide-start -->
+                <div class="swiper-slide tranding-slide">
+                  <article class="mx-auto max-w-sm shadow-xl bg-cover bg-center min-h-150 transform duration-500 hover:-translate-y-2 cursor-pointer group" style="background-image: url(./assets/gula.jpg);">
+                    <div class="bg-black bg-opacity-20 min-h-150 px-10 flex flex-wrap flex-col pt-96 hover:bg-opacity-75 transform duration-300">
+                        <h1 class="text-white text-3xl mb-5 transform translate-y-20 group-hover:translate-y-0 duration-300">
+                            On A Day Like Today
+                        </h1>
+                        <div class="w-16 h-2 bg-yellow-500 rounded-full mb-5 transform translate-y-20 group-hover:translate-y-0 duration-300">
+                        </div>
+                        <p class="opacity-0 text-white text-xl group-hover:opacity-80 transform duration-500">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, beatae!
+                        </p>
+                    </div>
+                </article>
+                </div>
+                <!-- Slide-end -->
+                <!-- Slide-start -->
+                <div class="swiper-slide tranding-slide">
+                  <article class="mx-auto max-w-sm shadow-xl bg-cover bg-center min-h-150 transform duration-500 hover:-translate-y-2 cursor-pointer group" style="background-image: url(./assets/gula.jpg);">
+                    <div class="bg-black bg-opacity-20 min-h-150 px-10 flex flex-wrap flex-col pt-96 hover:bg-opacity-75 transform duration-300">
+                        <h1 class="text-white text-3xl mb-5 transform translate-y-20 group-hover:translate-y-0 duration-300">
+                            On A Day Like Today
+                        </h1>
+                        <div class="w-16 h-2 bg-yellow-500 rounded-full mb-5 transform translate-y-20 group-hover:translate-y-0 duration-300">
+                        </div>
+                        <p class="opacity-0 text-white text-xl group-hover:opacity-80 transform duration-500">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, beatae!
+                        </p>
+                    </div>
+                </article>
+                </div>
+                <!-- Slide-end -->
+                <!-- Slide-start -->
+                <div class="swiper-slide tranding-slide">
+                  <article class="mx-auto max-w-sm shadow-xl bg-cover bg-center min-h-150 transform duration-500 hover:-translate-y-2 cursor-pointer group" style="background-image: url(./assets/gula.jpg);">
+                    <div class="bg-black bg-opacity-20 min-h-150 px-10 flex flex-wrap flex-col pt-96 hover:bg-opacity-75 transform duration-300">
+                        <h1 class="text-white text-3xl mb-5 transform translate-y-20 group-hover:translate-y-0 duration-300">
+                            On A Day Like Today
+                        </h1>
+                        <div class="w-16 h-2 bg-yellow-500 rounded-full mb-5 transform translate-y-20 group-hover:translate-y-0 duration-300">
+                        </div>
+                        <p class="opacity-0 text-white text-xl group-hover:opacity-80 transform duration-500">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, beatae!
+                        </p>
+                    </div>
+                </article>
+                </div>
+                <!-- Slide-end -->
+                <!-- Slide-start -->
+                <div class="swiper-slide tranding-slide">
+                  <article class="mx-auto max-w-sm shadow-xl bg-cover bg-center min-h-150 transform duration-500 hover:-translate-y-2 cursor-pointer group" style="background-image: url(./assets/gula.jpg);">
+                    <div class="bg-black bg-opacity-20 min-h-150 px-10 flex flex-wrap flex-col pt-96 hover:bg-opacity-75 transform duration-300">
+                        <h1 class="text-white text-3xl mb-5 transform translate-y-20 group-hover:translate-y-0 duration-300">
+                            On A Day Like Today
+                        </h1>
+                        <div class="w-16 h-2 bg-yellow-500 rounded-full mb-5 transform translate-y-20 group-hover:translate-y-0 duration-300">
+                        </div>
+                        <p class="opacity-0 text-white text-xl group-hover:opacity-80 transform duration-500">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, beatae!
+                        </p>
+                    </div>
+                </article>
+                </div>
+                <!-- Slide-end -->
+                <!-- Slide-start -->
+                <div class="swiper-slide tranding-slide">
+                  <article class="mx-auto max-w-sm shadow-xl bg-cover bg-center min-h-150 transform duration-500 hover:-translate-y-2 cursor-pointer group" style="background-image: url(./assets/gula.jpg);">
+                    <div class="bg-black bg-opacity-20 min-h-150 px-10 flex flex-wrap flex-col pt-96 hover:bg-opacity-75 transform duration-300">
+                        <h1 class="text-white text-3xl mb-5 transform translate-y-20 group-hover:translate-y-0 duration-300">
+                            On A Day Like Today
+                        </h1>
+                        <div class="w-16 h-2 bg-yellow-500 rounded-full mb-5 transform translate-y-20 group-hover:translate-y-0 duration-300">
+                        </div>
+                        <p class="opacity-0 text-white text-xl group-hover:opacity-80 transform duration-500">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, beatae!
+                        </p>
+                    </div>
+                </article>
+                </div>
+                <!-- Slide-end -->
+              </div>    
             </div>
           </div>
-          <div
-            class="max-w-sm bg-brown-500 border border-brown-dark rounded-lg shadow">
-            <a href="#">
-              <img
-                class="rounded-t-lg"
-                src="https://flowbite.com/docs/images/blog/image-1.jpg"
-                alt="" />
-            </a>
-            <div class="p-5">
-              <a href="#">
-                <h5 class="mb-2 text-2xl font-bold tracking-tight text-brown-800">
-                  Noteworthy technology acquisitions 2021
-                </h5>
-              </a>
-              <p class="mb-3 font-normal text-brown-800 font-poppins">
-                Here are the biggest enterprise technology acquisitions of 2021 so
-                far, in reverse chronological order.
-              </p>
-              <a
-                href="#"
-                class="inline-flex font-poppins items-center px-3 py-2 text-sm font-medium text-center text-brown-500 bg-brown-800 rounded-lg hover:bg-brown-900 focus:ring-4 focus:outline-none focus:ring-blue-300">
-                Read more
-                <svg
-                  class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 14 10">
-                  <path
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M1 5h12m0 0L9 1m4 4L9 9" />
-                </svg>
-              </a>
-            </div>
+        </section>
+        <div class="tranding-slider-control">
+          <div class="swiper-button-prev slider-arrow">
+            <i class="fa-solid fa-chevron-left" style="color: #b45904;"></i>
           </div>
-          <div
-            class="max-w-sm bg-brown-500 border border-brown-dark rounded-lg shadow">
-            <a href="#">
-              <img
-                class="rounded-t-lg"
-                src="https://flowbite.com/docs/images/blog/image-1.jpg"
-                alt="" />
-            </a>
-            <div class="p-5">
-              <a href="#">
-                <h5 class="mb-2 text-2xl font-bold tracking-tight text-brown-800">
-                  Noteworthy technology acquisitions 2021
-                </h5>
-              </a>
-              <p class="mb-3 font-normal text-brown-800 font-poppins">
-                Here are the biggest enterprise technology acquisitions of 2021 so
-                far, in reverse chronological order.
-              </p>
-              <a
-                href="#"
-                class="inline-flex font-poppins items-center px-3 py-2 text-sm font-medium text-center text-brown-500 bg-brown-800 rounded-lg hover:bg-brown-900 focus:ring-4 focus:outline-none focus:ring-blue-300">
-                Read more
-                <svg
-                  class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 14 10">
-                  <path
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M1 5h12m0 0L9 1m4 4L9 9" />
-                </svg>
-              </a>
-            </div>
+          <div class="swiper-button-next slider-arrow">
+            <i class="fa-solid fa-chevron-right" style="color: #b45904;"></i>
           </div>
+          <div class="swiper-pagination"></div>
         </div>
       </div>
       <!-- news end -->
 
-    <svg id="achivement" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 250">
+    <svg
+      id="achivement"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 1440 250">
       <path
         fill="#6f4518"
         fill-opacity="1"
@@ -271,103 +288,155 @@
       </h1>
       <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
         <div class="grid gap-4">
-            <div>
-                <a 
-                class="cursor-pointer" 
-                data-modal-target="default-modal"
-                data-modal-toggle="default-modal"><img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg" alt="">
-            </a>
+          <div>
+            <button
+              class="cursor-pointer"
+              data-modal-target="default-modal"
+              data-modal-toggle="default-modal"
+              ><img
+                class="h-auto max-w-full rounded-lg"
+                src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg"
+                alt="" />
+            </button>
           </div>
-            <div>
-                <a 
-                class="cursor-pointer" 
-                data-modal-target="default-modal"
-                data-modal-toggle="default-modal"><img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg" alt="">
-            </a>
+          <div>
+            <button
+              class="cursor-pointer"
+              data-modal-target="default-modal"
+              data-modal-toggle="default-modal"
+              ><img
+                class="h-auto max-w-full rounded-lg"
+                src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg"
+                alt="" />
+            </button>
           </div>
-            <div>
-                <a 
-                class="cursor-pointer" 
-                data-modal-target="default-modal"
-                data-modal-toggle="default-modal"><img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-2.jpg" alt="">
-            </a>
-          </div>
-        </div>
-        <div class="grid gap-4">
-            <div>
-                <a 
-                class="cursor-pointer" 
-                data-modal-target="default-modal"
-                data-modal-toggle="default-modal"><img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-3.jpg" alt="">
-            </a>
-          </div>
-            <div>
-                <a 
-                class="cursor-pointer" 
-                data-modal-target="default-modal"
-                data-modal-toggle="default-modal"><img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-4.jpg" alt="">
-            </a>
-          </div>
-            <div>
-                <a 
-                class="cursor-pointer" 
-                data-modal-target="default-modal"
-                data-modal-toggle="default-modal"><img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-5.jpg" alt="">
-            </a>
+          <div>
+            <button
+              class="cursor-pointer"
+              data-modal-target="default-modal"
+              data-modal-toggle="default-modal"
+              ><img
+                class="h-auto max-w-full rounded-lg"
+                src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-2.jpg"
+                alt="" />
+            </button>
           </div>
         </div>
         <div class="grid gap-4">
-            <div>
-                <a 
-                class="cursor-pointer" 
-                data-modal-target="default-modal"
-                data-modal-toggle="default-modal"><img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-6.jpg" alt="">
-            </a>
+          <div>
+            <button
+              class="cursor-pointer"
+              data-modal-target="default-modal"
+              data-modal-toggle="default-modal"
+              ><img
+                class="h-auto max-w-full rounded-lg"
+                src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-3.jpg"
+                alt="" />
+            </button>
           </div>
-            <div>
-                <a 
-                class="cursor-pointer" 
-                data-modal-target="default-modal"
-                data-modal-toggle="default-modal"><img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-7.jpg" alt="">
-            </a>
+          <div>
+            <button
+              class="cursor-pointer"
+              data-modal-target="default-modal"
+              data-modal-toggle="default-modal"
+              ><img
+                class="h-auto max-w-full rounded-lg"
+                src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-4.jpg"
+                alt="" />
+            </button>
           </div>
-            <div>
-                <a 
-                class="cursor-pointer" 
-                data-modal-target="default-modal"
-                data-modal-toggle="default-modal"><img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-8.jpg" alt="">
-            </a>
+          <div>
+            <button
+              class="cursor-pointer"
+              data-modal-target="default-modal"
+              data-modal-toggle="default-modal"
+              ><img
+                class="h-auto max-w-full rounded-lg"
+                src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-5.jpg"
+                alt="" />
+            </button>
           </div>
         </div>
         <div class="grid gap-4">
-            <div>
-                <a 
-                class="cursor-pointer" 
-                data-modal-target="default-modal"
-                data-modal-toggle="default-modal"><img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-9.jpg" alt="">
-            </a>
+          <div>
+            <button
+              class="cursor-pointer"
+              data-modal-target="default-modal"
+              data-modal-toggle="default-modal"
+              ><img
+                class="h-auto max-w-full rounded-lg"
+                src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-6.jpg"
+                alt="" />
+            </button>
           </div>
-            <div>
-                <a 
-                class="cursor-pointer" 
-                data-modal-target="default-modal"
-                data-modal-toggle="default-modal"><img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-10.jpg" alt="">
-            </a>
+          <div>
+            <button
+              class="cursor-pointer"
+              data-modal-target="default-modal"
+              data-modal-toggle="default-modal"
+              ><img
+                class="h-auto max-w-full rounded-lg"
+                src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-7.jpg"
+                alt="" />
+            </button>
           </div>
-            <div>
-                <a 
-                class="cursor-pointer" 
-                data-modal-target="default-modal"
-                data-modal-toggle="default-modal"><img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-11.jpg" alt="">
-            </a>
+          <div>
+            <button
+              class="cursor-pointer"
+              data-modal-target="default-modal"
+              data-modal-toggle="default-modal"
+              ><img
+                class="h-auto max-w-full rounded-lg"
+                src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-8.jpg"
+                alt="" />
+            </button>
+          </div>
+        </div>
+        <div class="grid gap-4">
+          <div>
+            <button
+              class="cursor-pointer"
+              data-modal-target="default-modal"
+              data-modal-toggle="default-modal"
+              ><img
+                class="h-auto max-w-full rounded-lg"
+                src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-9.jpg"
+                alt="" />
+            </button>
+          </div>
+          <div>
+            <button
+              class="cursor-pointer"
+              data-modal-target="default-modal"
+              data-modal-toggle="default-modal"
+              ><img
+                class="h-auto max-w-full rounded-lg"
+                src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-10.jpg"
+                alt="" />
+            </button>
+          </div>
+          <div>
+            <button
+              class="cursor-pointer"
+              data-modal-target="default-modal"
+              data-modal-toggle="default-modal"
+              ><img
+                class="h-auto max-w-full rounded-lg"
+                src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-11.jpg"
+                alt="" />
+            </button>
           </div>
         </div>
     </div>
+    </div>
+    
+
+      </div>
     
 
     </div>
     <!-- gallery end -->
-        
+
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 250">
       <path
         fill="#6f4518"
@@ -424,7 +493,7 @@
     <div
       id="preloader"
       class="fixed top-0 left-0 right-0 bottom-0 z-[100] overflow-hidden bg-brown-500"></div>
-      <!-- loading end -->
+    <!-- loading end -->
 
     <!-- Main modal -->
     <div
@@ -500,6 +569,8 @@
     <!-- modal end -->
 
   </body>
+  <script src="vendor/swiper/swiper-bundle.min.js"></script>
   <script src="js/index.js"></script>
   <script src="vendor/flowbite/dist/flowbite.min.js"></script>
+  <script src="js/index.js"></script>
 </html>
